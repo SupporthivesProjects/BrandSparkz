@@ -2,6 +2,10 @@ Figma file link :
 https://www.figma.com/design/VJ7jO7Ms4I6DDTYXrneVZo/AD487---Reskin--Digital-Marketing----Brandsparkz.Co?node-id=5-765&t=kDgS5jQcEWsQ02ms-1
 
 
+remote connecting link :
+git remote add origin https://github.com/SupporthivesProjects/BrandSparkz.git
+
+
 Pages : 
 
 1. Index : Mehul
