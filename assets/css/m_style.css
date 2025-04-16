@@ -1,0 +1,20 @@
+.desktop_none {
+    display: none;
+}
+
+.mobile_none {
+    display: block;
+}
+
+
+
+@media only screen and (max-width: 700px) {
+    .mobile_none {
+        display: none;
+    }
+
+    .desktop_none {
+        display: block;
+    }
+
+}
