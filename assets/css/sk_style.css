@@ -1,0 +1,586 @@
+.terms_1 {
+    position: relative;
+    background-image: url(../img/terms_bg.png);
+    width: 100%;
+    height: 374px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.intersect {
+    height: 81px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    z-index: 1;
+}
+
+.terms_div1 {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    max-width: 615px;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.terms_heading {
+    color: var(--Neutral-White, #FFF);
+    text-align: center;
+    margin-top: 181.5px;
+    font-family: 'Poppins';
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.para_terms {
+    color: var(--Neutral-500, #D0D0D0);
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 158%;
+}
+
+.terms_2 {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 24px;
+    max-width: 1256px;
+}
+
+.term2_main {
+    background-image: url(../img/liner_bg.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.term2_div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.heading_term2 {
+    color: var(--Neutral-800, #3C3C3C);
+    align-self: start;
+    font-family: 'Poppins';
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-bottom: 0%;
+}
+
+.para_term2 {
+    color: var(--Neutral-700, #656565);
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 158%;
+    margin-bottom: 0%;
+}
+
+.privacy_1 {
+    position: relative;
+    background-image: url(../img/privacy_bg.png);
+    width: 100%;
+    height: 374px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.error_div1 {
+    background-image: url(../img/404.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 780px;
+    width: 100%;
+}
+
+.inner_error {
+    display: flex;
+    flex-direction: column;
+    padding-top: 554px;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+.text_error {
+    display: flex;
+    flex-direction: column;
+    gap: 8px
+}
+
+.heading_error {
+    color: var(--Neutral-White, #FFF);
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-bottom: 0px;
+}
+
+.para_error {
+    color: var(--Neutral-White, #FFF);
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 0px;
+}
+
+.btn_error {
+    display: flex;
+    padding: 8px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+    background: var(--Primary, #EE5921);
+    color: var(--Neutral-White, #FFF);
+    font-family: 'Poppins';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.Ps_main {
+    padding: 64px;
+}
+
+.PayS_div1 {
+    position: relative;
+    background-image: url(../img/pay_S.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 374px;
+    width: 100%;
+}
+
+.div_for_pS {
+    display: flex;
+    padding: 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    border-radius: 20px;
+    background-image: url(../img/table_bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1054px;
+}
+
+.heading_of_pS {
+    color: var(--Neutral-800, #3C3C3C);
+    text-align: center;
+    align-self: center;
+    font-family: 'Poppins';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+
+}
+
+.div_for_ps_inner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 35px;
+    border-bottom: 2px solid #D0D0D0;
+    padding-bottom: 24px;
+    width: 100%;
+}
+
+.table_ps {
+    border-bottom: 1px solid #D0D0D0;
+
+}
+
+.head_ps {
+    color: var(--Neutral-800, #3C3C3C);
+    text-align: start;
+    font-family: 'Poppins';
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.for_total1 {
+    text-align: right;
+}
+
+.for_total {
+    color: var(--Neutral-800, #3C3C3C);
+    text-align: right;
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 158%;
+}
+
+
+.data_ps {
+    color: var(--Neutral-800, #3C3C3C);
+    text-align: start;
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 158%;
+}
+
+.data_ps span {
+    color: var(--Neutral-800, #3C3C3C);
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 158%;
+}
+
+.for_subtotal {
+    color: var(--Neutral-800, #3C3C3C);
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.for_bottom {
+    margin-bottom: 0%;
+    color: var(--Primary, #EE5921);
+    text-align: right;
+    font-family: 'Poppins';
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.btn_ps {
+    border-radius: 5px;
+    background: var(--Functional-Success-Green, #3CA455);
+    display: flex;
+    padding: 8px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    color: var(--Neutral-White, #FFF);
+    font-family: 'Poppins';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.for_center {
+    text-align: center;
+}
+
+.table thead tr th {
+    background: transparent;
+}
+
+.table tbody tr td {
+    background: transparent;
+}
+
+.PayUS_div1 {
+    position: relative;
+    background-image: url(../img/PU.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 374px;
+    width: 100%;
+}
+
+.btn_pus {
+    border-radius: 5px;
+    background: var(--Functional-Error-Red, #C81414);
+    display: flex;
+    padding: 8px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    color: var(--Neutral-White, #FFF);
+    font-family: 'Poppins';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+
+
+
+
+/* ------------------------ Code for Optimization------------------------*/
+
+.mobile_none {
+    display: block;
+}
+
+.desktop_none {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .mobile_none {
+        display: none;
+    }
+
+    .desktop_none {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 375px) and (max-width:667px) {
+    .terms_1 {
+        position: relative;
+        background-image: url(../img/terms_mo_bg.png);
+        width: 100%;
+        height: 509px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    .privacy_1 {
+        position: relative;
+        background-image: url(../img/privacy_mo_bg.png);
+        width: 100%;
+        height: 509px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    .intersect {
+        height: 22px;
+        width: 186px;
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        z-index: 1;
+    }
+
+    .terms_heading {
+        color: var(--Neutral-White, #FFF);
+        text-align: center;
+        margin-top: 291px;
+        font-family: 'Poppins';
+        font-size: 37px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        text-transform: capitalize;
+    }
+
+    .terms_2 {
+        padding: 40px 24px;
+    }
+
+    .term2_div {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .error_div1 {
+        background-image: url(../img/404_mo.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 509px;
+    }
+
+    .inner_error {
+        padding-top: 304px;
+        gap: 16px;
+    }
+
+    .heading_error {
+        font-size: 28px;
+    }
+
+    .PayS_div1 {
+        position: relative;
+        background-image: url(../img/ps_mo.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 509px;
+        width: 100%;
+    }
+
+    .Ps_main {
+        padding: 40px 24px;
+    }
+
+    .div_for_pS {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 26px;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: none;
+        padding: 0%;
+    }
+
+    .heading_of_pS {
+        font-size: 28px;
+    }
+
+    .head_ps {
+        font-size: 17px;
+    }
+
+    .data_ps {
+        font-size: 15px;
+    }
+
+    .data_ps span {
+        font-size: 15px;
+    }
+
+    .for_bottom {
+        font-size: 17px;
+    }
+
+    .PayUS_div1 {
+        position: relative;
+        background-image: url(../img/pu_mo.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 509px;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1151px) {
+
+    .intersect {
+        width: 250px;
+    }
+
+    .terms_2 {
+        max-width: 950px;
+    }
+
+}
+
+@media only screen and (min-width: 1152px) and (max-width:1279px) {
+    .intersect {
+        width: 260px;
+    }
+
+    .terms_2 {
+        max-width: 967px;
+    }
+
+
+}
+
+@media only screen and (min-width: 1280px) and (max-width:1348px) {
+    .intersect {
+        width: 310px;
+    }
+
+    .terms_2 {
+        max-width: 1202px;
+    }
+
+
+
+}
+
+@media only screen and (min-width: 1349px) and (max-width:1439px) {
+    .intersect {
+        width: 330px;
+    }
+
+}
+
+@media only screen and (min-width: 1440px) and (max-width:1499px) {
+    .intersect {
+        width: 361px;
+        ;
+    }
+
+}
+
+@media only screen and (min-width: 1500px) and (max-width:1599px) {
+
+    .intersect {
+        width: 400px;
+    }
+
+}
+
+@media only screen and (min-width: 1600px) and (max-width:1699px) {
+    .intersect {
+        width: 410px;
+    }
+
+}
+
+@media only screen and (min-width: 1700px) and (max-width:1799px) {
+    .intersect {
+        width: 478px;
+    }
+
+}
+
+@media only screen and (min-width: 1800px) and (max-width:1919px) {
+    .intersect {
+        width: 510px;
+    }
+
+}
