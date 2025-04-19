@@ -1,3 +1,15 @@
+.bg-image {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.bg-image:not([class*=absolute]) {
+    position: absolute;
+}
+
+
 .header_main_container {
     max-width: 1330px;
     margin-left: auto;
