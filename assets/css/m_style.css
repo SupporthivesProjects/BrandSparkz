@@ -230,6 +230,22 @@ input[type=checkbox], input[type=radio] {
     box-shadow: none;
     border: 2px solid #005bb996;
 }
+
+.input_select {
+    border-radius: 8px;
+    padding: 8px 16px;
+    color: var(--Neutral-800, #3C3C3C);
+
+    /* Desktop/Body */
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 158%; /* 25.28px */
+    border: 2px solid #FFF;
+    outline: 0px;
+    box-shadow: none;
+}
 section.contact_page textarea.input_global {
     min-height: 99px;
 }
@@ -467,8 +483,195 @@ section.contact_page textarea.input_global {
     margin-right: auto;
     display: flex;
 }
+.dash_s1 {
+    position: relative;
+    background: url(../img/dash_s1_bg.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding-top: 181px;
+    padding-bottom: 64.5px;
+}
+.dash_cutout {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 570px;
+    height: 85px;
+}
+.dash_title {
+    color: var(--Neutral-White, #FFF);
+    text-align: center;
 
+    /* Desktop/H2 */
+    font-family: 'Poppins';
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-bottom: 16px;
+}
+.dash_subtitle {
+    color: var(--Neutral-500, #D0D0D0);
+    text-align: center;
 
+    /* Desktop/Body */
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 158%; /* 25.28px */
+    margin-bottom: 0px;
+}
+.dash_s1_content {
+    width: 615px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.dash_tab_btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    color: var(--Neutral-800, #3C3C3C);
+
+    /* Desktop/H4 */
+    font-family: 'Poppins';
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+    padding: 0px;
+    width: 100%;
+}
+.dash_tab_btn.active {
+    opacity: 0.4;
+    border: none;
+} 
+.dash_tabpanel {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0px;
+}
+.dash_tabs_left_inner {
+    display: flex;
+    padding: 44px 16px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    border-radius: 20px;
+    background: var(--Neutral-White, #FFF);
+}
+
+.dash_account_tab {
+    display: flex;
+
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 98px;
+    width: 100%;
+}
+.dash_s2_titles {
+    color: var(--Neutral-800, #3C3C3C);
+
+    /* Desktop/H4 */
+    font-family: 'Poppins';
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-bottom: 24px;
+}
+.dash_bar {
+    background: #D0D0D0;
+    width: 100%;
+    height: 1px;
+}
+.dash_account_tab_left, .dash_account_tab_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 35px;
+    width: 100%;
+}
+
+.btn_orange_main {
+    border-radius: 5px;
+    background: var(--Primary, #EE5921);
+    display: flex;
+    padding: 8px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: var(--Neutral-White, #FFF);
+
+    /* Desktop/Buttons */
+    font-family: 'Poppins';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+    width: 100%;
+}
+.dash_account_tab_right_inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.dash_tabs_movable_right {
+    background: url(../img/contact_box_bg.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 90px;
+    border-radius: 20px;
+    max-width: 1178px;
+    width: 100%;
+}
+.dash_input_container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 10px;
+}
+.dash_tabs_left {
+    margin-top: 172.5px;
+    background: url(../img/contact_box_bg.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    padding: 22px 28px;
+    min-width: 231px;
+}
+.dash_tab_cutout_center {
+    margin-top: 172.5px;
+}
+.dash_tab_cutout_img {
+    width: 185px;
+    height: 505px;
+}
+.dash_s2 {
+    background: url(../img/liner_bg.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 64px 64px;
+}
 
 
 
