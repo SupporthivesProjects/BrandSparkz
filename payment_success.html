@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrandSparkz</title>
+
+    <!-- Bootstrap Styles Links -->
+    <link rel="stylesheet" href="./assets/dist/bootstrap/css/bootstrap.min.css">
+
+    <!-- Owl Carousel Links -->
+    <link rel="stylesheet" href="./assets/dist/owl-carousel/js/owl.carousel.js">
+
+    <!-- Google Fonts Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Style Sheets -->
+    <link rel="stylesheet" href="./assets/css/t_style.css">
+    <link rel="stylesheet" href="./assets/css/sk_style.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/m_style.css">
+
+</head>
+
+<body>
+
+    <header class="fixed-top">
+        <div class="header_top">
+            <div class="container desktop_header p-0">
+                <div class="header_main_container">
+                    <div class="header_left">
+                        <a href="./index.html">
+                            <img src="./assets/img/header_bg_trans_logo_.svg" alt="" class="img-fluid header_logo">
+                        </a>
+                    </div>
+                    <div class="header_center">
+                        <button class="btn btn_header_link active">
+                            About
+                        </button>
+                        <div class="header_center_bar"></div>
+                        <div class="service_drop_container">
+                            <button class="btn btn_header_drop" onclick="justDrop('service_drop', 'roter1', this)">
+                                Services
+                                <img src="./assets/img/drop.svg" alt="" class="img-fluid" id="roter1">
+                            </button>
+                            <div class="dropped_div d-none" id="service_drop">
+                                <button class="btn btn_orange_header active">SEO</button>
+                                <button class="btn btn_orange_header">PPC</button>
+                                <button class="btn btn_orange_header">ORM</button>
+                                <button class="btn btn_orange_header">UX/UI</button>
+                                <button class="btn btn_orange_header">Email</button>
+                                <button class="btn btn_orange_header">Social Media</button>
+                            </div>
+                        </div>
+                        <div class="header_center_bar"></div>
+                        <button class="btn btn_header_link">
+                            FAQ's
+                        </button>
+                        <div class="header_center_bar"></div>
+                        <button class="btn btn_header_link">
+                            Contact Us
+                        </button>
+                        <div class="header_center_bar"></div>
+                        <button class="btn btn_header_link">
+                            Login
+                        </button>
+                        <div class="header_center_bar"></div>
+                        <button class="btn btn_header_link">
+                            Sign Up
+                        </button>
+                        <div class="header_center_bar"></div>
+                        <div class="currency_drop_container">
+                            <button class="btn btn_header_drop" onclick="justDrop('currency_drop', 'roter2', this)">
+                                GBP £
+                                <img src="./assets/img/drop.svg" alt="" class="img-fluid" id="roter2">
+                            </button>
+                            <div class="dropped_div d-none" id="currency_drop">
+                                <button class="btn btn_orange_header active">GBP £</button>
+                                <button class="btn btn_orange_header">GBP £</button>
+                                <button class="btn btn_orange_header">GBP £</button>
+                                <button class="btn btn_orange_header">GBP £</button>
+                                <button class="btn btn_orange_header">GBP £</button>
+                                <button class="btn btn_orange_header">GBP £</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header_right">
+                        <div class="cart_drop_container">
+                            <button class="btn btn_global" onclick="justDrop('cart_drop', 'roter5', this)">
+                                <img src="./assets/img/btn_primary_pattern.png" alt=""
+                                    class="img-fluid btn_global_pattern">
+                                <div class="btn_global_inner">
+                                    <img src="./assets/img/cart_logo.svg" alt="" class="img-fluid cart_logo">
+                                    <p class="cart_text">View Cart</p>
+                                </div>
+                            </button>
+                            <div class="cart_dropper_div d-none" id="cart_drop">
+                                <div class="cart_item">
+                                    <div class="cart_item_left">
+                                        <p class="cart_item_title">
+                                            SEO - Platinum Package
+                                        </p>
+                                        <div class="cart_item_values_div">
+                                            <p class="cart_item_values">x1</p>
+                                            <p class="cart_item_values">1 Month</p>
+                                            <p class="cart_item_values_bold">1 Month</p>
+                                        </div>
+                                    </div>
+                                    <div class="cart_item_right">
+                                        <button class="btn">
+                                            <img src="./assets/img/bin.svg" alt="" class="img-fluid">
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="cart_item">
+                                    <div class="cart_item_left">
+                                        <p class="cart_item_title">
+                                            SEO - Platinum Package
+                                        </p>
+                                        <div class="cart_item_values_div">
+                                            <p class="cart_item_values">x1</p>
+                                            <p class="cart_item_values">1 Month</p>
+                                            <p class="cart_item_values_bold">1 Month</p>
+                                        </div>
+                                    </div>
+                                    <div class="cart_item_right">
+                                        <button class="btn">
+                                            <img src="./assets/img/bin.svg" alt="" class="img-fluid">
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="cart_item">
+                                    <div class="cart_item_left">
+                                        <p class="cart_item_title">
+                                            SEO - Platinum Package
+                                        </p>
+                                        <div class="cart_item_values_div">
+                                            <p class="cart_item_values">x1</p>
+                                            <p class="cart_item_values">1 Month</p>
+                                            <p class="cart_item_values_bold">1 Month</p>
+                                        </div>
+                                    </div>
+                                    <div class="cart_item_right">
+                                        <button class="btn">
+                                            <img src="./assets/img/bin.svg" alt="" class="img-fluid">
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="cart_footer">
+                                    <div class="cart_footer_top">
+                                        <p class="cart_item_values_bold">Subtotal</p>
+                                        <p class="cart_item_values_bold">£11,468.00</p>
+                                    </div>
+                                    <div class="cart_footer_bottom">
+                                        <button class="btn btn_orange_transparent"
+                                            onclick="justDrop('cart_drop', 'roter5', this)">Close</button>
+                                        <button class="btn btn_orange">Checkout</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container mobile_header p-0">
+                <div class="header_mobo_main">
+                    <div class="header_mobo_left">
+                        <a href="./index.html">
+                            <img src="./assets/img/header_mobo_bg_trans_logo_.svg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="header_mobo_right">
+                        <div class="hamburger_menu">
+                            <img src="./assets/img/hamburger_logo.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="hamburger_menu_close" style="display: none;">
+                            <img src="./assets/img/hamburger_close.svg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header_mobo_main_slide" style="display: none;">
+            <div class="header_main_mobo">
+                <button class="btn btn_header_link">
+                    About
+                </button>
+                <div class="service_drop_container">
+                    <button class="btn btn_header_drop" onclick="justDrop('service_drop_mob', 'roter3', this)">
+                        Services
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            id="roter3">
+                            <path d="M18 9L12 15L6 9" stroke="#3C3C3C" stroke-width="2" />
+                        </svg>
+                    </button>
+                    <div class="dropped_div d-none" id="service_drop_mob">
+                        <button class="btn btn_orange_header">SEO</button>
+                        <button class="btn btn_orange_header">PPC</button>
+                        <button class="btn btn_orange_header">ORM</button>
+                        <button class="btn btn_orange_header">UX/UI</button>
+                        <button class="btn btn_orange_header">Email</button>
+                        <button class="btn btn_orange_header">Social Media</button>
+                    </div>
+                </div>
+                <button class="btn btn_header_link">
+                    FAQs
+                </button>
+                <button class="btn btn_header_link">
+                    Contact Us
+                </button>
+                <button class="btn btn_header_link">
+                    Login
+                </button>
+                <button class="btn btn_header_link">
+                    Sign up
+                </button>
+                <div class="currency_drop_container">
+                    <button class="btn btn_header_drop" onclick="justDrop('currency_drop_mobo', 'roter4', this)">
+                        GBP £
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            id="roter4">
+                            <path d="M18 9L12 15L6 9" stroke="#3C3C3C" stroke-width="2" />
+                        </svg>
+                    </button>
+                    <div class="dropped_div d-none" id="currency_drop_mobo">
+                        <button class="btn btn_orange_header active">GBP £</button>
+                        <button class="btn btn_orange_header">GBP £</button>
+                        <button class="btn btn_orange_header">GBP £</button>
+                        <button class="btn btn_orange_header">GBP £</button>
+                    </div>
+                </div>
+                <button class="btn btn_global cart_menu">
+                    <img src="./assets/img/btn_primary_pattern.png" alt="" class="img-fluid btn_global_pattern">
+                    <div class="btn_global_inner w-100">
+                        <img src="./assets/img/cart_logo.svg" alt="" class="img-fluid cart_logo">
+                        <p class="cart_text">View Cart</p>
+                    </div>
+                </button>
+            </div>
+        </div>
+        <div class="header_cart_mobo_main_slide" style="display: none;">
+            <div class="header_cart_main_mobo">
+                <div class="cart_item">
+                    <div class="cart_item_left">
+                        <p class="cart_item_title">
+                            SEO - Platinum Package
+                        </p>
+                        <div class="cart_item_values_div">
+                            <p class="cart_item_values">x1</p>
+                            <p class="cart_item_values">1 Month</p>
+                            <p class="cart_item_values_bold">1 Month</p>
+                        </div>
+                    </div>
+                    <div class="cart_item_right">
+                        <button class="btn">
+                            <img src="./assets/img/bin.svg" alt="" class="img-fluid">
+                        </button>
+                    </div>
+                </div>
+                <div class="cart_item">
+                    <div class="cart_item_left">
+                        <p class="cart_item_title">
+                            SEO - Platinum Package
+                        </p>
+                        <div class="cart_item_values_div">
+                            <p class="cart_item_values">x1</p>
+                            <p class="cart_item_values">1 Month</p>
+                            <p class="cart_item_values_bold">1 Month</p>
+                        </div>
+                    </div>
+                    <div class="cart_item_right">
+                        <button class="btn">
+                            <img src="./assets/img/bin.svg" alt="" class="img-fluid">
+                        </button>
+                    </div>
+                </div>
+                <div class="cart_item">
+                    <div class="cart_item_left">
+                        <p class="cart_item_title">
+                            SEO - Platinum Package
+                        </p>
+                        <div class="cart_item_values_div">
+                            <p class="cart_item_values">x1</p>
+                            <p class="cart_item_values">1 Month</p>
+                            <p class="cart_item_values_bold">1 Month</p>
+                        </div>
+                    </div>
+                    <div class="cart_item_right">
+                        <button class="btn">
+                            <img src="./assets/img/bin.svg" alt="" class="img-fluid">
+                        </button>
+                    </div>
+                </div>
+
+                <div class="cart_footer">
+                    <div class="cart_footer_top">
+                        <p class="cart_item_values_bold">Subtotal</p>
+                        <p class="cart_item_values_bold">£11,468.00</p>
+                    </div>
+                    <div class="cart_footer_bottom">
+                        <button class="btn btn_orange_transparent" onclick="closeMobileCart()">Back to menu</button>
+                        <button class="btn btn_orange">Checkout</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="pay_S">
+        <div class="PayS_div1">
+            <img src="./assets/img/intersect.png" alt="" class="intersect">
+            <div class="container">
+                <div class="terms_div1">
+                    <h3 class="terms_heading">Payment Successful</h3>
+                    <p class="para_terms">Lorem ipsum dolor sit amet consectetur. Purus eget arcu non suscipit id.</p>
+                </div>
+            </div>
+        </div>
+        <div class="term2_main Ps_main">
+            <div class="div_for_pS">
+                <div class="div_for_ps_inner">
+                    <h3 class="heading_of_pS">Order Summary</h3>
+                </div>
+                <table class="table table-borderless ">
+                    <thead>
+                        <tr class="table_ps">
+                            <th scope="col">
+                                <p class="head_ps">Product</p>
+                            </th>
+                            <th scope="col">
+                                <p class="head_ps">No.&nbsp;Months</p>
+                            </th>
+                            <th scope="col">
+                                <p class="head_ps for_center">Qty</p>
+                            </th>
+                            <th scope="col">
+                                <p class="head_ps for_total1">Subtotal</p>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="table_ps">
+                            <td scope="row">
+                                <p class="data_ps"><span>SEO</span>- Platnium Package</p>
+                            </td>
+                            <td>
+                                <p class="data_ps">1 Month</p>
+                            </td>
+                            <td>
+                                <p class="data_ps for_center">1</p>
+                            </td>
+                            <td>
+                                <p class=" for_total">£1,839.00</p>
+                            </td>
+                        </tr>
+                        <tr class="table_ps">
+                            <td scope="row">
+                                <p class="data_ps"><span>SEO</span>- Platnium Package</p>
+                            </td>
+                            <td>
+                                <p class="data_ps">1 Month</p>
+                            </td>
+                            <td>
+                                <p class="data_ps for_center">1</p>
+                            </td>
+                            <td>
+                                <p class="for_total">£1,839.00</p>
+                            </td>
+                        </tr>
+                        <tr class="table_ps">
+                            <td scope="row">
+                                <p class="data_ps"><span>SEO</span>- Platnium Package</p>
+                            </td>
+                            <td>
+                                <p class="data_ps">1 Month</p>
+                            </td>
+                            <td>
+                                <p class="data_ps for_center">1</p>
+                            </td>
+                            <td>
+                                <p class="for_total">£1,839.00</p>
+                            </td>
+                        </tr>
+                        <tr class="table_ps">
+                            <td scope="row">
+                                <p class="data_ps"><span>SEO</span>- Platnium Package</p>
+                            </td>
+                            <td>
+                                <p class="data_ps">1 Month</p>
+                            </td>
+                            <td>
+                                <p class="data_ps for_center">1</p>
+                            </td>
+                            <td>
+                                <p class=" for_total">£1,839.00</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td scope="row"></td>
+                            <td></td>
+                            <td>
+                                <p class="head_ps for_subtotal for_center">Total</p>
+                            </td>
+                            <td>
+                                <p class="for_total for_bottom">£7,356.00</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button class="btn btn_ps">Return home</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <img src="./assets/img/mobo_footer_top_right.png" alt="" class="img-fluid desktop_none footer_top_right_img">
+        <img src="./assets/img/mobo_footer_bottom_left.png" alt=""
+            class="img-fluid desktop_none footer_bottom_left_img">
+        <div class="container">
+            <div class="footer_main_bg">
+                <div class="footer_top">
+                    <div class="footer_top_left">
+                        <img src="./assets/img/footer_logo.svg" alt="" class="img-fluid footer_logo">
+                        <img src="./assets/img/mastercard.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="footer_top_right">
+                        <div class="footer_right_element">
+                            <p class="footer_element_title">Support Links</p>
+                            <div class="footer_link_div">
+                                <button class="btn footer_links">FAQs</button>
+                                <button class="btn footer_links">Terms & Conditions</button>
+                                <button class="btn footer_links">Privacy Policy</button>
+                            </div>
+                        </div>
+                        <div class="footer_right_element">
+                            <p class="footer_element_title">Our Services</p>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="footer_link_div">
+                                        <button class="btn footer_links">SEO</button>
+                                        <button class="btn footer_links">ORM</button>
+                                        <button class="btn footer_links">Email&nbsp;Marketing</button>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="footer_link_div">
+                                        <button class="btn footer_links">Pay-Per-Click</button>
+                                        <button class="btn footer_links">UX/UI</button>
+                                        <button class="btn footer_links">Social Media</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer_right_element">
+                            <p class="footer_element_title">Got Questions?</p>
+                            <div class="footer_link_div">
+                                <address class="footer_address">
+                                    info@Brandsparkz.co <br>
+                                    123 Main Street, <br>
+                                    New York, <br>
+                                    10030
+                                </address>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_bottom">
+                    <p class="footer_copyright">Copyright © 2025 Brand Sparkz.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    <!-- JQuery CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Bootstrap JS Links -->
+    <script src="./assets/dist/bootstrap/js/bootstrap.popper.min.js"></script>
+    <script src="./assets/dist/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Owl Carousel JS Links -->
+    <script src="./assets/dist/owl-carousel/js/owl.carousel.js"></script>
+
+    <!-- JS Link -->
+    <script src="./assets/js/main.js"></script>
+
+</body>
+
+</html>
