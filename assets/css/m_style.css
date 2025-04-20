@@ -356,6 +356,7 @@ section.contact_page textarea.input_global {
     font-weight: 300;
     line-height: normal;
     text-transform: capitalize;
+    margin-bottom: 26px;
 }
 .register_title span {
     color: var(--Neutral-800, #3C3C3C);
@@ -417,13 +418,60 @@ section.contact_page textarea.input_global {
     background-repeat: no-repeat;
     padding: 217px 70px;
     margin-left: 34px;
-    margin-top: -20px;
+    margin-top: -14px;
     border-radius: 60px 0px 0px 60px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+.login_right_bg {
+    background: url(../img/login_right_bg.png);
+    background-size: cover;
+    background-position: left -19px center;
+    background-repeat: no-repeat;
+    padding: 181px 43.5px 155px;
+    margin-right: 34px;
+    margin-top: -27px;
+    margin-bottom: 35px;
+    border-radius: 0px 60px 60px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cutter_main_div_inner_right_login {
+    padding: 117px 69.5px 81px 91.5px;
+    width: 100%;
+}
+.btn_forgot_pass_link {
+    color: var(--Functional-Info-Blue, #005BB9);
+    text-align: center;
+
+    /* Desktop/Body */
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 158%; /* 25.28px */
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+    padding: 0px;
+    border: 0px;
+    outline: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+
+
+
+
 
 @media only screen and (max-width: 700px) {
     .mobile_none {
@@ -648,6 +696,19 @@ section.contact_page textarea.input_global {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        width: 100%;
+    }
+    .cutter_main_div_inner_bottom_mobo_login {
+        background: url(../img/login_left_bg_mobo.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 40px 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
     }
     .register_left_title {
         color: var(--Neutral-White, #FFF);
@@ -657,7 +718,7 @@ section.contact_page textarea.input_global {
         font-family: 'Poppins';
         font-size: 30px;
         font-style: italic;
-        font-weight: 600;
+        font-weight: 400;
         line-height: normal;
         text-transform: capitalize;
         margin-bottom: 31px;
@@ -673,6 +734,9 @@ section.contact_page textarea.input_global {
         font-weight: 600;
         line-height: normal;
         text-transform: capitalize;
+    }
+    .cutter_main_div_inner_right_login {
+        padding: 115px 24px 40px 24px;
     }
 }
 
