@@ -2470,6 +2470,12 @@ text-transform: capitalize;
     .img_3 {
         padding: 345px 25px 25px 25px;
     }
+    .service_table tbody tr td {
+        padding: 27px 30px!important;
+    }
+    .service_table thead tr th {
+        padding: 0px 0px 16px 0px!important;
+    }
 }
 
 @media only screen and (min-width: 1349px) and (max-width:1439px) {
@@ -2513,6 +2519,12 @@ text-transform: capitalize;
     .image_section {
         gap: 30px;
     }
+    .service_table tbody tr td {
+        padding: 27px 30px!important;
+    }
+    .service_table thead tr th {
+        padding: 0px 0px 16px 0px!important;
+    }
 }
 
 @media only screen and (min-width: 1440px) and (max-width:1499px) {
@@ -2552,6 +2564,9 @@ text-transform: capitalize;
     .image_section {
         gap: 30px;
     }
+    .service_table tbody tr td {
+        padding: 27px 40px!important;
+    }
 
 }
 
@@ -2579,6 +2594,9 @@ text-transform: capitalize;
     }
     .image_section {
         gap: 30px;
+    }
+    .service_table tbody tr td {
+        padding: 27px 50px!important;
     }
 }
 
@@ -2840,7 +2858,7 @@ text-transform: capitalize;
 
 
 .service_table tbody tr td {
-    padding: 27px 83px;
+    padding: 27px 60px;
 }
 
 .service_table tbody tr td:first-child p {
@@ -2925,7 +2943,7 @@ td img {
 }
 .white_box {
     background-color: #fff;
-    width: 23px;
+    width: 28px;
     height: 4px;
     position: absolute;
     bottom: -2px;
