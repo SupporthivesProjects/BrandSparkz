@@ -176,4 +176,4 @@ document.querySelector('.left-btn_mob').addEventListener('click', showPrev);
 
 // Auto-play
 updateSlider();
-// let sliderInterval = setInterval(showNext, 3000);
+let sliderInterval = setInterval(showNext, 3000);
