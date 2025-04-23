@@ -71,6 +71,14 @@ const images = [
     './assets/img/owl_em.png',
     './assets/img/owl_smm.png'
 ]
+const hover_card_images = [
+    './assets/img/cut_seo.png',
+    './assets/img/cut_ppc.png',
+    './assets/img/cut_orm.png',
+    './assets/img/cut_wdd.png',
+    './assets/img/cut_em.png',
+    './assets/img/cut_smm.png'
+]
 const videos = [
     './assets/img/hs1_vid_seo.mp4',
     './assets/img/hs1_vid_ppc.mp4',
@@ -78,6 +86,14 @@ const videos = [
     './assets/img/hs1_vid_wdd.mp4',
     './assets/img/hs1_vid_em.mp4',
     './assets/img/hs1_vid_smm.mp4',
+]
+const videos_mob = [
+    './assets/img/hs1_vid_seo_mob.mp4',
+    './assets/img/hs1_vid_ppc_mob.mp4',
+    './assets/img/hs1_vid_orm_mob.mp4',
+    './assets/img/hs1_vid_wdd_mob.mp4',
+    './assets/img/hs1_vid_em_mobo.mp4',
+    './assets/img/hs1_vid_smm_mob.mp4',
 ]
 const text_array = [
     'Search Engine Optimization',
@@ -87,6 +103,14 @@ const text_array = [
     'Email Marketing',
     'Social Media Management',
 ]
+const crd_text_array = [
+    'SEO',
+    'PPC',
+    'ORM',
+    'UI/UX',
+    'Email',
+    'Social',
+]
 
 let index = 0;
 const imgElements = document.querySelectorAll('.owl_image');
@@ -95,26 +119,41 @@ function updateSlider() {
   imgElements.forEach((img, i) => {
     img.classList.remove('show');
     setTimeout(() => {
-      img.src = images[(index + i) % images.length];
+      if (screen.width > 700) {
+        let items = document.querySelectorAll('.hs1_slider_disc_div .hs1_slide_disc');
+        items.forEach(item => item.classList.remove('active'));
+        items[index].classList.add('active');
 
-      $("#hs1_vid_desk").fadeOut(100, function () {
-        $("#hs1_vid_desk source").attr("src", videos[index]);
-        this.load();
-        $("#hs1_vid_desk").fadeIn(500);
-    });
+        img.src = images[(index + i) % images.length];
+        $(".hs1_element_card_image").attr("src", hover_card_images[index]);
 
-    $(".slide_btm_trix_txt").text(text_array[index]);
-    
+        $(".slide_btm_trix_txt").text(text_array[index]);
+        $(".hs1_ele_crd_pill_txt").text(crd_text_array[index]);
+        
+        var index_val = index + 1
+        $('.index_pos span').text('0' + index_val);
 
-      var index_val = index + 1
-      $('.index_pos span').text('0' + index_val);
+        $("#hs1_vid_desk").fadeOut(100, function () {
+            $("#hs1_vid_desk source").attr("src", videos[index]);
+            this.load();
+            $("#hs1_vid_desk").fadeIn(500);
+        });
+
+      } else {
+        let items = document.querySelectorAll('.hs1_slider_disc_div_mob .hs1_slide_disc_mob');
+        items.forEach(item => item.classList.remove('active'));
+        items[index].classList.add('active');
 
 
-      let items = document.querySelectorAll('.hs1_slider_disc_div .hs1_slide_disc');
-      items.forEach(item => item.classList.remove('active'));
+        $(".navitrix_text").text(crd_text_array[index]);
 
-      items[index].classList.add('active');
-      
+        $("#hs1_vid_mobo").fadeOut(100, function () {
+            $("#hs1_vid_mobo source").attr("src", videos_mob[index]);
+            this.load();
+            $("#hs1_vid_mobo").fadeIn(500);
+        }); 
+      }
+
       img.classList.add('show');
     }, 500);
   });
@@ -132,7 +171,9 @@ function showPrev() {
 
 document.querySelector('.right-btn').addEventListener('click', showNext);
 document.querySelector('.left-btn').addEventListener('click', showPrev);
+document.querySelector('.right-btn_mob').addEventListener('click', showNext);
+document.querySelector('.left-btn_mob').addEventListener('click', showPrev);
 
 // Auto-play
 updateSlider();
-let sliderInterval = setInterval(showNext, 3000);
+// let sliderInterval = setInterval(showNext, 3000);
