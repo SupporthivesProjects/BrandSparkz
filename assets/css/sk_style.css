@@ -106,7 +106,6 @@
     background-position: center center;
 }
 
-
 .error_div1 {
     background-image: url(../img/404.png);
     background-size: cover;
@@ -255,6 +254,7 @@
     line-height: 158%;
 }
 
+
 .data_ps {
     color: var(--Neutral-800, #3C3C3C);
     text-align: start;
@@ -319,6 +319,15 @@
     text-align: center;
 }
 
+
+.table thead tr th {
+    background: transparent;
+}
+
+.table tbody tr td {
+    background: transparent;
+}
+
 .div_for_pS table thead tr th {
     background: transparent;
 }
@@ -326,7 +335,6 @@
 .div_for_pS table tbody tr td {
     background: transparent;
 }
-
 
 .PayUS_div1 {
     position: relative;
@@ -355,6 +363,8 @@
     line-height: normal;
     text-transform: capitalize;
 }
+
+
 
 
 .secure_pay1 {
@@ -593,9 +603,6 @@
     margin-left: auto;
     margin-right: auto;
 }
-
-
-
 
 /* ------------------------ Code for Optimization------------------------*/
 
@@ -842,6 +849,7 @@
         border: none;
     }
 
+
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1151px) {
@@ -854,6 +862,7 @@
         max-width: 950px;
     }
 
+
     .secure_bottom {
         width: 935px;
     }
@@ -865,6 +874,7 @@
     .secure_top {
         width: 935px;
     }
+
 
 }
 
@@ -877,6 +887,7 @@
         max-width: 967px;
     }
 
+
     .secure_bottom {
         width: 1012px;
     }
@@ -888,6 +899,7 @@
     .secure_top {
         width: 1012px;
     }
+
 }
 
 @media only screen and (min-width: 1280px) and (max-width:1348px) {

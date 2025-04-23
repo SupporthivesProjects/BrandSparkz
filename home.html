@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrandSparkz</title>
+
+    <!-- Bootstrap Styles Links -->
+    <link rel="stylesheet" href="./assets/dist/bootstrap/css/bootstrap.min.css">
+
+    <!-- Owl Carousel Links -->
+    <link rel="stylesheet" href="./assets/dist/owl-carousel/css/owl.carousel.css">
+
+    <!-- Google Fonts Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Style Sheets -->
+    <link rel="stylesheet" href="./assets/css/t_style.css">
+    <link rel="stylesheet" href="./assets/css/sk_style.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/m_style.css">
+
+</head>
+
+<body>
+
+    <header class="fixed-top">
+        <div class="header_top">
+            <div class="container desktop_header p-0">
+                <div class="header_main_container">
+                    <div class="header_left">
+                        <a href="./index.html">
+                            <img src="./assets/img/header_bg_trans_logo_.svg" alt="" class="img-fluid header_logo">
+                        </a>
+                    </div>
+                    <div class="header_center">
+                        <button class="btn btn_header_link active">
+                            About
+                        </button>
+                        <div class="header_center_bar"></div>
+                        <div class="service_drop_container">
+                            <button class="btn btn_header_drop" onclick="justDrop('service_drop', 'roter1', this)">
+                                Services
+                                <img src="./assets/img/drop.svg" alt="" class="img-fluid" id="roter1">
+                            </button>
+                            <div class="dropped_div d-none" id="service_drop">
+                                <button class="btn btn_orange_header active">SEO</button>
+                                <button class="btn btn_orange_header">PPC</button>
+                                <button class="btn btn_orange_header">ORM</button>
+                                <button class="btn btn_orange_header">UX/UI</button>
+                                <button class="btn btn_orange_header">Email</button>
+                                <button class="btn btn_orange_header">Social Media</button>
+                            </div>
+                        </div>
+                        <div class="header_center_bar"></div>
+                        <button class="btn btn_header_link">
+                            FAQ's
+                        </button>
+                        <div class="header_center_bar"></div>
+                        <button class="btn btn_header_link">
+                            Contact Us
+                        </button>
+                        <div class="header_center_bar"></div>
+                        <button class="btn btn_header_link">
+                            Login
+                        </button>
+                        <div class="header_center_bar"></div>
+                        <button class="btn btn_header_link">
+                            Sign Up
+                        </button>
+                        <div class="header_center_bar"></div>
+                        <div class="currency_drop_container">
+                            <button class="btn btn_header_drop" onclick="justDrop('currency_drop', 'roter2', this)">
+                                GBP £
+                                <img src="./assets/img/drop.svg" alt="" class="img-fluid" id="roter2">
+                            </button>
+                            <div class="dropped_div d-none" id="currency_drop">
+                                <button class="btn btn_orange_header active">GBP £</button>
+                                <button class="btn btn_orange_header">GBP £</button>
+                                <button class="btn btn_orange_header">GBP £</button>
+                                <button class="btn btn_orange_header">GBP £</button>
+                                <button class="btn btn_orange_header">GBP £</button>
+                                <button class="btn btn_orange_header">GBP £</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header_right">
+                        <div class="cart_drop_container">
+                            <button class="btn btn_global" onclick="justDrop('cart_drop', 'roter5', this)">
+                                <img src="./assets/img/btn_primary_pattern.png" alt="" class="img-fluid btn_global_pattern">
+                                <div class="btn_global_inner">
+                                    <img src="./assets/img/cart_logo.svg" alt="" class="img-fluid cart_logo">
+                                    <p class="cart_text">View Cart</p>
+                                </div>
+                            </button>
+                            <div class="cart_dropper_div d-none" id="cart_drop">
+                                <div class="cart_item">
+                                    <div class="cart_item_left">
+                                        <p class="cart_item_title">
+                                            SEO - Platinum Package
+                                        </p>
+                                        <div class="cart_item_values_div">
+                                            <p class="cart_item_values">x1</p>
+                                            <p class="cart_item_values">1 Month</p>
+                                            <p class="cart_item_values_bold">1 Month</p>
+                                        </div>
+                                    </div>
+                                    <div class="cart_item_right">
+                                        <button class="btn">
+                                            <img src="./assets/img/bin.svg" alt="" class="img-fluid">
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="cart_item">
+                                    <div class="cart_item_left">
+                                        <p class="cart_item_title">
+                                            SEO - Platinum Package
+                                        </p>
+                                        <div class="cart_item_values_div">
+                                            <p class="cart_item_values">x1</p>
+                                            <p class="cart_item_values">1 Month</p>
+                                            <p class="cart_item_values_bold">1 Month</p>
+                                        </div>
+                                    </div>
+                                    <div class="cart_item_right">
+                                        <button class="btn">
+                                            <img src="./assets/img/bin.svg" alt="" class="img-fluid">
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="cart_item">
+                                    <div class="cart_item_left">
+                                        <p class="cart_item_title">
+                                            SEO - Platinum Package
+                                        </p>
+                                        <div class="cart_item_values_div">
+                                            <p class="cart_item_values">x1</p>
+                                            <p class="cart_item_values">1 Month</p>
+                                            <p class="cart_item_values_bold">1 Month</p>
+                                        </div>
+                                    </div>
+                                    <div class="cart_item_right">
+                                        <button class="btn">
+                                            <img src="./assets/img/bin.svg" alt="" class="img-fluid">
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="cart_footer">
+                                    <div class="cart_footer_top">
+                                        <p class="cart_item_values_bold">Subtotal</p>
+                                        <p class="cart_item_values_bold">£11,468.00</p>
+                                    </div>
+                                    <div class="cart_footer_bottom">
+                                        <button class="btn btn_orange_transparent" onclick="justDrop('cart_drop', 'roter5', this)">Close</button>
+                                        <button class="btn btn_orange">Checkout</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container mobile_header p-0">
+                <div class="header_mobo_main">
+                    <div class="header_mobo_left">
+                        <a href="./index.html">
+                            <img src="./assets/img/header_mobo_bg_trans_logo_.svg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="header_mobo_right">
+                        <div class="hamburger_menu">
+                            <img src="./assets/img/hamburger_logo.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="hamburger_menu_close" style="display: none;">
+                            <img src="./assets/img/hamburger_close.svg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header_mobo_main_slide" style="display: none;">
+            <div class="header_main_mobo">
+                <button class="btn btn_header_link">
+                    About
+                </button>
+                <div class="service_drop_container">
+                    <button class="btn btn_header_drop" onclick="justDrop('service_drop_mob', 'roter3', this)">
+                        Services
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"  id="roter3">
+                            <path d="M18 9L12 15L6 9" stroke="#3C3C3C" stroke-width="2"/>
+                        </svg>
+                    </button>
+                    <div class="dropped_div d-none" id="service_drop_mob">
+                        <button class="btn btn_orange_header">SEO</button>
+                        <button class="btn btn_orange_header">PPC</button>
+                        <button class="btn btn_orange_header">ORM</button>
+                        <button class="btn btn_orange_header">UX/UI</button>
+                        <button class="btn btn_orange_header">Email</button>
+                        <button class="btn btn_orange_header">Social Media</button>
+                    </div>
+                </div>
+                <button class="btn btn_header_link">
+                    FAQs
+                </button>
+                <button class="btn btn_header_link">
+                    Contact Us
+                </button>
+                <button class="btn btn_header_link">
+                    Login 
+                </button>
+                <button class="btn btn_header_link">
+                    Sign up 
+                </button>
+                <div class="currency_drop_container">
+                    <button class="btn btn_header_drop" onclick="justDrop('currency_drop_mobo', 'roter4', this)">
+                        GBP £
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"  id="roter4">
+                            <path d="M18 9L12 15L6 9" stroke="#3C3C3C" stroke-width="2"/>
+                        </svg>
+                    </button>
+                    <div class="dropped_div d-none" id="currency_drop_mobo">
+                        <button class="btn btn_orange_header active">GBP £</button>
+                        <button class="btn btn_orange_header">GBP £</button>
+                        <button class="btn btn_orange_header">GBP £</button>
+                        <button class="btn btn_orange_header">GBP £</button>
+                    </div>
+                </div>
+                <button class="btn btn_global cart_menu">
+                    <img src="./assets/img/btn_primary_pattern.png" alt="" class="img-fluid btn_global_pattern">
+                    <div class="btn_global_inner w-100">
+                        <img src="./assets/img/cart_logo.svg" alt="" class="img-fluid cart_logo">
+                        <p class="cart_text">View Cart</p>
+                    </div>
+                </button>
+            </div>
+        </div>
+        <div class="header_cart_mobo_main_slide" style="display: none;">
+            <div class="header_cart_main_mobo">
+                <div class="cart_item">
+                    <div class="cart_item_left">
+                        <p class="cart_item_title">
+                            SEO - Platinum Package
+                        </p>
+                        <div class="cart_item_values_div">
+                            <p class="cart_item_values">x1</p>
+                            <p class="cart_item_values">1 Month</p>
+                            <p class="cart_item_values_bold">1 Month</p>
+                        </div>
+                    </div>
+                    <div class="cart_item_right">
+                        <button class="btn">
+                            <img src="./assets/img/bin.svg" alt="" class="img-fluid">
+                        </button>
+                    </div>
+                </div>
+                <div class="cart_item">
+                    <div class="cart_item_left">
+                        <p class="cart_item_title">
+                            SEO - Platinum Package
+                        </p>
+                        <div class="cart_item_values_div">
+                            <p class="cart_item_values">x1</p>
+                            <p class="cart_item_values">1 Month</p>
+                            <p class="cart_item_values_bold">1 Month</p>
+                        </div>
+                    </div>
+                    <div class="cart_item_right">
+                        <button class="btn">
+                            <img src="./assets/img/bin.svg" alt="" class="img-fluid">
+                        </button>
+                    </div>
+                </div>
+                <div class="cart_item">
+                    <div class="cart_item_left">
+                        <p class="cart_item_title">
+                            SEO - Platinum Package
+                        </p>
+                        <div class="cart_item_values_div">
+                            <p class="cart_item_values">x1</p>
+                            <p class="cart_item_values">1 Month</p>
+                            <p class="cart_item_values_bold">1 Month</p>
+                        </div>
+                    </div>
+                    <div class="cart_item_right">
+                        <button class="btn">
+                            <img src="./assets/img/bin.svg" alt="" class="img-fluid">
+                        </button>
+                    </div>
+                </div>
+
+                <div class="cart_footer">
+                    <div class="cart_footer_top">
+                        <p class="cart_item_values_bold">Subtotal</p>
+                        <p class="cart_item_values_bold">£11,468.00</p>
+                    </div>
+                    <div class="cart_footer_bottom">
+                        <button class="btn btn_orange_transparent" onclick="closeMobileCart()">Back to menu</button>
+                        <button class="btn btn_orange">Checkout</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    
+    <section class="home_page">
+        <div class="hs1">
+            <div class="hs1_cutout_right"></div>
+            <div class="hs1_cutout_left"></div>
+            <div class="container p-0">
+                <div class="hs1_main">
+                    <div class="hs1_left">
+
+                        <div class="hs1_vid_cut">
+                            <img src="./assets/img/hs1_vid_cut_top_right.png" alt="" class="img-fluid mobile_none hs1_vid_cut_top_right">
+                            <img src="./assets/img/hs1_vid_cut_top_right_mobo.png" alt="" class="img-fluid desktop_none hs1_vid_cut_top_right">
+
+                            <div class="">
+                                <video class="bg-image mobile_none" id="hs1_vid_desk" loop="" muted="" autoplay="" style="object-fit: cover;">
+                                    <source src="" type="video/mp4">
+                                </video>
+                                <video class="bg-image desktop_none" id="hs1_vid_mobo" loop="" muted="" autoplay="" style="object-fit: cover;">
+                                    <source src="" type="video/mp4">
+                                </video>
+                                
+                            </div>
+
+                            <div class="hs1_per_element_card">
+                                <div class="hs1_element_card_top">
+                                    <div class="hs1_element_card_pill">
+                                        <p class="hs1_ele_crd_pill_txt"></p>
+                                    </div>
+                                </div>
+                                <div class="hs1_element_card_bottom">
+                                    <img src="" alt="" class="img-fluid hs1_element_card_image">
+                                    <button class="btn btn_ark_arr">
+                                        <img src="./assets/img/ark_arr.png" alt="" class="img-fluid arkarr">
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="women_mask_text_div hpl1">
+                                <div class="disc_div">
+                                    <div class="outer_disc">
+                                        <div class="inner_disc"></div>
+                                    </div>
+                                </div>
+                                <div class="wm_text_div">
+                                    <p class="hs1_wm_text">Two Factor Authentication</p>
+                                </div>
+                            </div>
+
+                            <div class="women_mask_text_div hpl2">
+                                <div class="disc_div">
+                                    <div class="outer_disc">
+                                        <div class="inner_disc"></div>
+                                    </div>
+                                </div>
+                                <div class="wm_text_div">
+                                    <p class="hs1_wm_text">Multi User Access</p>
+                                </div>
+                            </div>
+
+                            <div class="women_mask_text_div hpl3">
+                                <div class="disc_div">
+                                    <div class="outer_disc">
+                                        <div class="inner_disc"></div>
+                                    </div>
+                                </div>
+                                <div class="wm_text_div">
+                                    <p class="hs1_wm_text">A/B Testing</p>
+                                </div>
+                            </div>
+
+                            <div class="mob_navigator_slider desktop_none">
+                                    
+                                <button class="slider-btn left-btn_mob">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12" fill="none">
+                                        <path d="M5.98315 10.678L1.0001 5.69493L5.98315 0.711877" stroke="#3C3C3C" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+
+                                <div class="hs1_slider_disc_div_mob">
+                                    <div class="hs1_slide_disc_mob active">
+                                        <div class="hs1_slide_disc_inner">
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="hs1_slide_disc_mob">
+                                        <div class="hs1_slide_disc_inner">
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="hs1_slide_disc_mob">
+                                        <div class="hs1_slide_disc_inner">
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="hs1_slide_disc_mob">
+                                        <div class="hs1_slide_disc_inner">
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="hs1_slide_disc_mob">
+                                        <div class="hs1_slide_disc_inner">
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="hs1_slide_disc_mob">
+                                        <div class="hs1_slide_disc_inner">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button class="slider-btn right-btn_mob">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12" fill="none">
+                                        <path d="M0.983154 0.711914L5.96621 5.69496L0.983154 10.678" stroke="#3C3C3C" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="mob_hs1_navitrix desktop_none">
+                                <div class="navitrix_outer">
+                                    <div class="navitrix_inner">
+                                        <p class="navitrix_text"></p>
+                                    </div>
+                                </div>
+                                <div class="navitrix_center"></div>
+                                <div class="navatrix_last">
+                                    <button class="brn brn_mob_ark">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                                            <circle cx="14" cy="14" r="14" fill="white"/>
+                                            <path d="M11.2771 11.7229L15.8314 11.7229M15.8314 11.7229L15.8314 16.2771M15.8314 11.7229L11.2771 16.2771" stroke="#3C3C3C" stroke-linecap="round" stroke-linejoin="round"/>
+                                          </svg>
+                                    </button>
+                                </div>
+                            </div>
+
+
+                            <button class="btn btn_arr">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M12 1L23 12M23 12L12 23M23 12L1.00003 12" stroke="#3C3C3C" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+
+                            <img src="./assets/img/hs1_vid_cut_bottom_left.png" alt="" class="img-fluid mobile_none hs1_vid_cut_bottom_left">
+                            <img src="./assets/img/hs1_vid_cut_bottom_left_mobo.png" alt="" class="img-fluid desktop_none hs1_vid_cut_bottom_left">
+                        </div>
+
+                    </div>
+                    <div class="hs1_right">
+                        <div class="hs1_content">
+                            <div class="hs1_pre_title_div">
+                                <div class="hs1_pre_title_disc"></div>
+                                <p class="hs1_pre_title">Digital Marketing</p>
+                            </div>
+                            <h1 class="hs1_title">You Bring the <span>Dream</span><br>
+                                We Bring the <span>Spark</span></h1>
+                            <p class="hs1_subtitle">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, feugiat laoreet vel, amet tristique dolor euismod sed diam. Consectetur porttitor diam mattis commodo sed elementum.
+                            </p>
+
+                            <div class="hs1_slider_div_main">
+                                
+                                <div class="hs1_slider_div">
+
+                                    <div class="owl_img_div">
+                                        <div class="owl_img_div_inner">
+                                            <div class="owl_img_div_inner_img">
+                                                <img src="./assets/img/owl_seo.png" alt="" class="img-fluid owl_image">
+                                            </div>
+                                            <div class="botom_trix">
+                                                <p class="slide_btm_trix_txt">Search Engine Optimization</p>
+                                                <div class="circ_btn">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="37" viewBox="0 0 36 37" fill="none">
+                                                        <circle cx="18" cy="18.5" r="18" fill="#F3F3F1"/>
+                                                        <path d="M15.7346 16.4519L20.2889 16.4519M20.2889 16.4519L20.2889 21.0061M20.2889 16.4519L15.7346 21.0061" stroke="#3C3C3C" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="owl_img_div">
+                                        <img src="./assets/img/owl_ppc.png" alt="" class="img-fluid owl_image">
+                                    </div>
+                                    <div class="owl_img_div">
+                                        <img src="./assets/img/owl_orm.png" alt="" class="img-fluid owl_image">
+                                    </div>
+                                    <div class="owl_img_div">
+                                        <img src="./assets/img/owl_wdd.png" alt="" class="img-fluid owl_image">
+                                    </div>
+
+                                    
+                                </div>
+
+                                <div class="hs1_slider_btn_div mobile_none">
+                                    <div class="">
+                                        <button class="slider-btn left-btn">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12" fill="none">
+                                                <path d="M5.98315 10.678L1.0001 5.69493L5.98315 0.711877" stroke="#3C3C3C" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </button>
+                                        <button class="slider-btn right-btn">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12" fill="none">
+                                                <path d="M0.983154 0.711914L5.96621 5.69496L0.983154 10.678" stroke="#3C3C3C" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="hs1_slider_disc_div">
+                                        <div class="hs1_slide_disc active">
+                                            <div class="hs1_slide_disc_inner">
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="hs1_slide_disc">
+                                            <div class="hs1_slide_disc_inner">
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="hs1_slide_disc">
+                                            <div class="hs1_slide_disc_inner">
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="hs1_slide_disc">
+                                            <div class="hs1_slide_disc_inner">
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="hs1_slide_disc">
+                                            <div class="hs1_slide_disc_inner">
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="hs1_slide_disc">
+                                            <div class="hs1_slide_disc_inner">
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="index_pos_div">
+                                        <p class="index_pos"><span></span>/06</p>
+                                    </div>
+                                </div>
+
+                                
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hs2">
+            <div class="container">
+                <div class="hs2_main">
+                    <div class="hs2_mobo_top desktop_none">
+                        <img src="./assets/img/hs2_mobo1.png" alt="" class="img-fluid desktop_none hs2_top_mobo_image">
+                    </div>
+                    <div class="hs2_left">
+                        <div class="hs2_content">
+                            <h1 class="hs2_title">The Difference?<br>
+                                It's in the <span>Spark.</span></h1>
+                            <p class="hs2_subtitle">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat dictum eget etiam metus, facilisi. Congue libero, nulla sem pulvinar et commodo. Sed velit ornare at arcu semper. Adipiscing volutpat ac egestas dignissim volutpat nec vel. Eget pellentesque metus, feugiat iaculis. Odio est tortor urna libero purus at. Vitae placerat dolor ultrices lectus tristique dignissim odio purus amet. Mauris eget habitant in.
+                            </p>
+                            <button class="btn btn_global">
+                                <img src="./assets/img/btn_primary_pattern.png" alt="" class="img-fluid btn_global_pattern">
+                                <div class="btn_global_inner">
+                                    <p class="cart_text">Read More</p>
+                                    <img src="./assets/img/arrow_logo.svg" alt="" class="img-fluid cart_logo">
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="hs2_right">
+                        <img src="./assets/img/hs2_img.png" alt="" class="img-fluid mobile_none hs2_right_image">
+                        <img src="./assets/img/hs2_mobo2.png" alt="" class="img-fluid desktop_none hs2_right_image">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hs3">
+
+        <img src="./assets/img/cutter_top_right.png" alt="" class="img-fluid mobile_none cutter_top_right">
+        <img src="./assets/img/cutter_bottom_left.png" alt="" class="img-fluid mobile_none cutter_bottom_left">
+            <div class="container p-0">
+                <div class="hs3_title_box">
+                    <h1 class="hs3_title">The <span>Sparkz</span> Menu</h1>
+                    <p class="hs3_subtitle">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, feugiat laoreet vel, amet tristique dolor euismod sed diam. Consectetur porttitor diam mattis commodo sed elementum, ultricies.
+                    </p>
+                </div>
+
+                <div class="hs3_card_box_main">
+                    <div class="hs3_card_main">
+                        <div class="hs3_card_left">
+                            <div class="hs3_card_left_left">
+                                <img src="./assets/img/hs3_card_img.png" alt="" class="img-fluid hs3_card_left_image">
+                            </div>
+                            <div class="hs3_card_left_right">
+                                <h6 class="hs3_card_title">Search Engine Optimisation ( SEO )</h6>
+                                <p class="hs3_card_subtitle">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui ac id et facilisi. Arcu accumsan 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="hs3_card_center">
+                            <img src="./assets/img/hs3_card_intersect.png" alt="" class="img-fluid mobile_none hs3_card_intersect">
+                            <img src="./assets/img/hs3_card_intersect_mob.png" alt="" class="img-fluid desktop_none hs3_card_intersect">
+                        </div>
+                        <div class="hs3_card_right">
+                            <button class="btn hs3_card_right_inner_orange">
+                                <img src="./assets/img/arrow_logo.svg" alt="" class="img-fluid hs3_card_right_inner_arrow">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="hs3_card_main">
+                        <div class="hs3_card_left">
+                            <div class="hs3_card_left_left">
+                                <img src="./assets/img/hs3_card_img2.png" alt="" class="img-fluid hs3_card_left_image">
+                            </div>
+                            <div class="hs3_card_left_right">
+                                <h6 class="hs3_card_title">Pay-Per-Click ( PPC )</h6>
+                                <p class="hs3_card_subtitle">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui ac id et facilisi. Arcu accumsan 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="hs3_card_center">
+                            <img src="./assets/img/hs3_card_intersect.png" alt="" class="img-fluid mobile_none hs3_card_intersect">
+                            <img src="./assets/img/hs3_card_intersect_mob.png" alt="" class="img-fluid desktop_none hs3_card_intersect">
+                        </div>
+                        <div class="hs3_card_right">
+                            <button class="btn hs3_card_right_inner_orange">
+                                <img src="./assets/img/arrow_logo.svg" alt="" class="img-fluid hs3_card_right_inner_arrow">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="hs3_card_main">
+                        <div class="hs3_card_left">
+                            <div class="hs3_card_left_left">
+                                <img src="./assets/img/hs3_card_img3.png" alt="" class="img-fluid hs3_card_left_image">
+                            </div>
+                            <div class="hs3_card_left_right">
+                                <h6 class="hs3_card_title">Online Reputation Management</h6>
+                                <p class="hs3_card_subtitle">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui ac id et facilisi. Arcu accumsan 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="hs3_card_center">
+                            <img src="./assets/img/hs3_card_intersect.png" alt="" class="img-fluid mobile_none hs3_card_intersect">
+                            <img src="./assets/img/hs3_card_intersect_mob.png" alt="" class="img-fluid desktop_none hs3_card_intersect">
+                        </div>
+                        <div class="hs3_card_right">
+                            <button class="btn hs3_card_right_inner_orange">
+                                <img src="./assets/img/arrow_logo.svg" alt="" class="img-fluid hs3_card_right_inner_arrow">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="hs3_card_main">
+                        <div class="hs3_card_left">
+                            <div class="hs3_card_left_left">
+                                <img src="./assets/img/hs3_card_img4.png" alt="" class="img-fluid hs3_card_left_image">
+                            </div>
+                            <div class="hs3_card_left_right">
+                                <h6 class="hs3_card_title">Web Design and Web Development</h6>
+                                <p class="hs3_card_subtitle">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui ac id et facilisi. Arcu accumsan 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="hs3_card_center">
+                            <img src="./assets/img/hs3_card_intersect.png" alt="" class="img-fluid mobile_none hs3_card_intersect">
+                            <img src="./assets/img/hs3_card_intersect_mob.png" alt="" class="img-fluid desktop_none hs3_card_intersect">
+                        </div>
+                        <div class="hs3_card_right">
+                            <button class="btn hs3_card_right_inner_orange">
+                                <img src="./assets/img/arrow_logo.svg" alt="" class="img-fluid hs3_card_right_inner_arrow">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="hs3_card_main">
+                        <div class="hs3_card_left">
+                            <div class="hs3_card_left_left">
+                                <img src="./assets/img/hs3_card_img5.png" alt="" class="img-fluid hs3_card_left_image">
+                            </div>
+                            <div class="hs3_card_left_right">
+                                <h6 class="hs3_card_title">Email Marketing</h6>
+                                <p class="hs3_card_subtitle">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui ac id et facilisi. Arcu accumsan 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="hs3_card_center">
+                            <img src="./assets/img/hs3_card_intersect.png" alt="" class="img-fluid mobile_none hs3_card_intersect">
+                            <img src="./assets/img/hs3_card_intersect_mob.png" alt="" class="img-fluid desktop_none hs3_card_intersect">
+                        </div>
+                        <div class="hs3_card_right">
+                            <button class="btn hs3_card_right_inner_orange">
+                                <img src="./assets/img/arrow_logo.svg" alt="" class="img-fluid hs3_card_right_inner_arrow">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="hs3_card_main">
+                        <div class="hs3_card_left">
+                            <div class="hs3_card_left_left">
+                                <img src="./assets/img/hs3_card_img6.png" alt="" class="img-fluid hs3_card_left_image">
+                            </div>
+                            <div class="hs3_card_left_right">
+                                <h6 class="hs3_card_title">Social Media</h6>
+                                <p class="hs3_card_subtitle">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui ac id et facilisi. Arcu accumsan 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="hs3_card_center">
+                            <img src="./assets/img/hs3_card_intersect.png" alt="" class="img-fluid mobile_none hs3_card_intersect">
+                            <img src="./assets/img/hs3_card_intersect_mob.png" alt="" class="img-fluid desktop_none hs3_card_intersect">
+                        </div>
+                        <div class="hs3_card_right">
+                            <button class="btn hs3_card_right_inner_orange">
+                                <img src="./assets/img/arrow_logo.svg" alt="" class="img-fluid hs3_card_right_inner_arrow">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="hs4">
+            <div class="container">
+                <div class="hs4_title_box">
+                    <h1 class="hs4_title">The <span>Brand Sparkz</span> Flow</h1>
+                    <p class="hs4_subtitle">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, feugiat laoreet vel, amet tristique dolor euismod sed diam. Consectetur porttitor diam mattis commodo sed elementum, ultricies.
+                    </p>
+                </div>
+
+                <div class="hs4_card_box_main">
+                    <div class="hs4_full_card">
+                        <img src="./assets/img/hs4_cut_1.png" alt="" class="img-fluid hs4_top_cut d-flex mr-auto">
+                        <div class="hs4_card">
+                            <div class="hs4_card_box">
+                                <div class="hs4_card_box_top">
+                                    <p class="hs4_card_number">01</p>
+                                </div>
+                                <h6 class="hs4_card_title">choose packages</h6>
+                                <p class="hs4_card_subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Felis phasellus condimentum feugiat dui ullamcorper tellus odio. Laoreet risus felis ultrices.</p>
+                                <button class="btn btn_global mx-auto">
+                                    <img src="./assets/img/btn_primary_pattern.png" alt="" class="img-fluid btn_global_pattern">
+                                    <div class="btn_global_inner">
+                                        <p class="cart_text">Explore the Sparkz Suite</p>
+                                        <img src="./assets/img/arrow_logo.svg" alt="" class="img-fluid cart_logo">
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hs4_full_card">
+                        <img src="./assets/img/hs4_cut_2.png" alt="" class="img-fluid hs4_top_cut d-flex mx-auto">
+                        <div class="hs4_card">
+                            <div class="hs4_card_box">
+                                <div class="hs4_card_box_top">
+                                    <p class="hs4_card_number">02</p>
+                                </div>
+                                <h6 class="hs4_card_title">Schedule Appointment</h6>
+                                <p class="hs4_card_subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Felis phasellus condimentum feugiat dui ullamcorper tellus odio. Laoreet risus felis ultrices.</p>
+                                <button class="btn btn_global mx-auto">
+                                    <img src="./assets/img/btn_primary_pattern.png" alt="" class="img-fluid btn_global_pattern">
+                                    <div class="btn_global_inner">
+                                        <p class="cart_text">Contact Our Team</p>
+                                        <img src="./assets/img/arrow_logo.svg" alt="" class="img-fluid cart_logo">
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hs4_full_card">
+                        <img src="./assets/img/hs4_cut_3.png" alt="" class="img-fluid hs4_top_cut d-flex ms-auto">
+                        <div class="hs4_card">
+                            <div class="hs4_card_box">
+                                <div class="hs4_card_box_top">
+                                    <p class="hs4_card_number">03</p>
+                                </div>
+                                <h6 class="hs4_card_title">Grow together</h6>
+                                <p class="hs4_card_subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Felis phasellus condimentum feugiat dui ullamcorper tellus odio. Laoreet risus felis ultrices.</p>
+                                <button class="btn btn_global mx-auto">
+                                    <img src="./assets/img/btn_primary_pattern.png" alt="" class="img-fluid btn_global_pattern">
+                                    <div class="btn_global_inner">
+                                        <p class="cart_text">Browse Our Services</p>
+                                        <img src="./assets/img/arrow_logo.svg" alt="" class="img-fluid cart_logo">
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hs5">
+            <div class="container">
+                <div class="hs5_inner">
+                        <video class="mobile_none" loop="" muted="" autoplay="">
+                            <source src="./assets/img/hs5_desktop_video.mp4" type="video/mp4">
+                        </video>
+                        
+                        <video class="desktop_none" loop="" muted="" autoplay="">
+                            <source src="./assets/img/hs5_mobile_video.mp4" type="video/mp4">
+                        </video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <img src="./assets/img/mobo_footer_top_right.png" alt="" class="img-fluid desktop_none footer_top_right_img">
+        <img src="./assets/img/mobo_footer_bottom_left.png" alt="" class="img-fluid desktop_none footer_bottom_left_img">
+        <div class="container">
+            <div class="footer_main_bg">
+                <div class="footer_top">
+                    <div class="footer_top_left">
+                        <img src="./assets/img/footer_logo.svg" alt="" class="img-fluid footer_logo">
+                        <img src="./assets/img/mastercard.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="footer_top_right">
+                        <div class="footer_right_element">
+                            <p class="footer_element_title">Support Links</p>
+                            <div class="footer_link_div">
+                                <button class="btn footer_links">FAQs</button>
+                                <button class="btn footer_links">Terms & Conditions</button>
+                                <button class="btn footer_links">Privacy Policy</button>
+                            </div>
+                        </div>
+                        <div class="footer_right_element">
+                            <p class="footer_element_title">Our Services</p>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="footer_link_div">
+                                        <button class="btn footer_links">SEO</button>
+                                        <button class="btn footer_links">ORM</button>
+                                        <button class="btn footer_links">Email&nbsp;Marketing</button>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="footer_link_div">
+                                        <button class="btn footer_links">Pay-Per-Click</button>
+                                        <button class="btn footer_links">UX/UI</button>
+                                        <button class="btn footer_links">Social Media</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer_right_element">
+                            <p class="footer_element_title">Got Questions?</p>
+                            <div class="footer_link_div">
+                                <address class="footer_address">
+                                    info@Brandsparkz.co <br>
+                                    123 Main Street, <br>
+                                    New York, <br>
+                                    10030
+                                </address>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_bottom">
+                    <p class="footer_copyright">Copyright © 2025 Brand Sparkz.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+    
+    <!-- JQuery CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <!-- Bootstrap JS Links -->
+    <script src="./assets/dist/bootstrap/js/bootstrap.popper.min.js"></script>
+    <script src="./assets/dist/bootstrap/js/bootstrap.min.js"></script>
+    
+    <!-- Owl Carousel JS Links -->
+    <script src="./assets/dist/owl-carousel/js/owl.carousel.js"></script>
+    
+    <!-- JS Link -->
+    <script src="./assets/js/main.js"></script>
+
+</body>
+    
+</html>
