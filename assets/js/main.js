@@ -61,7 +61,78 @@ function justDrop(droperId, roterId, element) {
             theId2.style.rotate = '0deg';
         }
     }
-
-    
-    
 }
+
+const images = [
+    './assets/img/owl_seo.png',
+    './assets/img/owl_ppc.png',
+    './assets/img/owl_orm.png',
+    './assets/img/owl_wdd.png',
+    './assets/img/owl_em.png',
+    './assets/img/owl_smm.png'
+]
+const videos = [
+    './assets/img/hs1_vid_seo.mp4',
+    './assets/img/hs1_vid_ppc.mp4',
+    './assets/img/hs1_vid_orm.mp4',
+    './assets/img/hs1_vid_wdd.mp4',
+    './assets/img/hs1_vid_em.mp4',
+    './assets/img/hs1_vid_smm.mp4',
+]
+const text_array = [
+    'Search Engine Optimization',
+    'Pay-Per-Click',
+    'Online Reputation managment',
+    'Web Design & Web Development',
+    'Email Marketing',
+    'Social Media Management',
+]
+
+let index = 0;
+const imgElements = document.querySelectorAll('.owl_image');
+
+function updateSlider() {
+  imgElements.forEach((img, i) => {
+    img.classList.remove('show');
+    setTimeout(() => {
+      img.src = images[(index + i) % images.length];
+
+      $("#hs1_vid_desk").fadeOut(100, function () {
+        $("#hs1_vid_desk source").attr("src", videos[index]);
+        this.load();
+        $("#hs1_vid_desk").fadeIn(500);
+    });
+
+    $(".slide_btm_trix_txt").text(text_array[index]);
+    
+
+      var index_val = index + 1
+      $('.index_pos span').text('0' + index_val);
+
+
+      let items = document.querySelectorAll('.hs1_slider_disc_div .hs1_slide_disc');
+      items.forEach(item => item.classList.remove('active'));
+
+      items[index].classList.add('active');
+      
+      img.classList.add('show');
+    }, 500);
+  });
+}
+
+function showNext() {
+  index = (index + 1) % images.length;
+  updateSlider();
+}
+
+function showPrev() {
+  index = (index - 1 + images.length) % images.length;
+  updateSlider();
+}
+
+document.querySelector('.right-btn').addEventListener('click', showNext);
+document.querySelector('.left-btn').addEventListener('click', showPrev);
+
+// Auto-play
+updateSlider();
+let sliderInterval = setInterval(showNext, 3000);
