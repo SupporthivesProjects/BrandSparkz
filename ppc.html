@@ -1,0 +1,1530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrandSparkz</title>
+
+    <!-- Bootstrap Styles Links -->
+    <link rel="stylesheet" href="./assets/dist/bootstrap/css/bootstrap.min.css">
+
+    <!-- Owl Carousel Links -->
+    <link rel="stylesheet" href="./assets/dist/owl-carousel/js/owl.carousel.js">
+
+    <!-- Google Fonts Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Style Sheets -->
+    <link rel="stylesheet" href="./assets/css/t_style.css">
+    <link rel="stylesheet" href="./assets/css/sk_style.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/m_style.css">
+
+</head>
+
+<body>
+
+    <header class="fixed-top">
+        <div class="header_top">
+            <div class="container desktop_header p-0">
+                <div class="header_main_container">
+                    <div class="header_left">
+                        <a href="./index.html">
+                            <img src="./assets/img/header_bg_trans_logo_.svg" alt="" class="img-fluid header_logo">
+                        </a>
+                    </div>
+                    <div class="header_center">
+                        <button class="btn btn_header_link active">
+                            About
+                        </button>
+                        <div class="header_center_bar"></div>
+                        <div class="service_drop_container">
+                            <button class="btn btn_header_drop" onclick="justDrop('service_drop', 'roter1', this)">
+                                Services
+                                <img src="./assets/img/drop.svg" alt="" class="img-fluid" id="roter1">
+                            </button>
+                            <div class="dropped_div d-none" id="service_drop">
+                                <button class="btn btn_orange_header active">SEO</button>
+                                <button class="btn btn_orange_header">PPC</button>
+                                <button class="btn btn_orange_header">ORM</button>
+                                <button class="btn btn_orange_header">UX/UI</button>
+                                <button class="btn btn_orange_header">Email</button>
+                                <button class="btn btn_orange_header">Social Media</button>
+                            </div>
+                        </div>
+                        <div class="header_center_bar"></div>
+                        <button class="btn btn_header_link">
+                            FAQ's
+                        </button>
+                        <div class="header_center_bar"></div>
+                        <button class="btn btn_header_link">
+                            Contact Us
+                        </button>
+                        <div class="header_center_bar"></div>
+                        <button class="btn btn_header_link">
+                            Login
+                        </button>
+                        <div class="header_center_bar"></div>
+                        <button class="btn btn_header_link">
+                            Sign Up
+                        </button>
+                        <div class="header_center_bar"></div>
+                        <div class="currency_drop_container">
+                            <button class="btn btn_header_drop" onclick="justDrop('currency_drop', 'roter2', this)">
+                                GBP £
+                                <img src="./assets/img/drop.svg" alt="" class="img-fluid" id="roter2">
+                            </button>
+                            <div class="dropped_div d-none" id="currency_drop">
+                                <button class="btn btn_orange_header active">GBP £</button>
+                                <button class="btn btn_orange_header">GBP £</button>
+                                <button class="btn btn_orange_header">GBP £</button>
+                                <button class="btn btn_orange_header">GBP £</button>
+                                <button class="btn btn_orange_header">GBP £</button>
+                                <button class="btn btn_orange_header">GBP £</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header_right">
+                        <div class="cart_drop_container">
+                            <button class="btn btn_global" onclick="justDrop('cart_drop', 'roter5', this)">
+                                <img src="./assets/img/btn_primary_pattern.png" alt="" class="img-fluid btn_global_pattern">
+                                <div class="btn_global_inner">
+                                    <img src="./assets/img/cart_logo.svg" alt="" class="img-fluid cart_logo">
+                                    <p class="cart_text">View Cart</p>
+                                </div>
+                            </button>
+                            <div class="cart_dropper_div d-none" id="cart_drop">
+                                <div class="cart_item">
+                                    <div class="cart_item_left">
+                                        <p class="cart_item_title">
+                                            SEO - Platinum Package
+                                        </p>
+                                        <div class="cart_item_values_div">
+                                            <p class="cart_item_values">x1</p>
+                                            <p class="cart_item_values">1 Month</p>
+                                            <p class="cart_item_values_bold">1 Month</p>
+                                        </div>
+                                    </div>
+                                    <div class="cart_item_right">
+                                        <button class="btn">
+                                            <img src="./assets/img/bin.svg" alt="" class="img-fluid">
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="cart_item">
+                                    <div class="cart_item_left">
+                                        <p class="cart_item_title">
+                                            SEO - Platinum Package
+                                        </p>
+                                        <div class="cart_item_values_div">
+                                            <p class="cart_item_values">x1</p>
+                                            <p class="cart_item_values">1 Month</p>
+                                            <p class="cart_item_values_bold">1 Month</p>
+                                        </div>
+                                    </div>
+                                    <div class="cart_item_right">
+                                        <button class="btn">
+                                            <img src="./assets/img/bin.svg" alt="" class="img-fluid">
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="cart_item">
+                                    <div class="cart_item_left">
+                                        <p class="cart_item_title">
+                                            SEO - Platinum Package
+                                        </p>
+                                        <div class="cart_item_values_div">
+                                            <p class="cart_item_values">x1</p>
+                                            <p class="cart_item_values">1 Month</p>
+                                            <p class="cart_item_values_bold">1 Month</p>
+                                        </div>
+                                    </div>
+                                    <div class="cart_item_right">
+                                        <button class="btn">
+                                            <img src="./assets/img/bin.svg" alt="" class="img-fluid">
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="cart_footer">
+                                    <div class="cart_footer_top">
+                                        <p class="cart_item_values_bold">Subtotal</p>
+                                        <p class="cart_item_values_bold">£11,468.00</p>
+                                    </div>
+                                    <div class="cart_footer_bottom">
+                                        <button class="btn btn_orange_transparent" onclick="justDrop('cart_drop', 'roter5', this)">Close</button>
+                                        <button class="btn btn_orange">Checkout</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container mobile_header p-0">
+                <div class="header_mobo_main">
+                    <div class="header_mobo_left">
+                        <a href="./index.html">
+                            <img src="./assets/img/header_mobo_bg_trans_logo_.svg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="header_mobo_right">
+                        <div class="hamburger_menu">
+                            <img src="./assets/img/hamburger_logo.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="hamburger_menu_close" style="display: none;">
+                            <img src="./assets/img/hamburger_close.svg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header_mobo_main_slide" style="display: none;">
+            <div class="header_main_mobo">
+                <button class="btn btn_header_link">
+                    About
+                </button>
+                <div class="service_drop_container">
+                    <button class="btn btn_header_drop" onclick="justDrop('service_drop_mob', 'roter3', this)">
+                        Services
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"  id="roter3">
+                            <path d="M18 9L12 15L6 9" stroke="#3C3C3C" stroke-width="2"/>
+                        </svg>
+                    </button>
+                    <div class="dropped_div d-none" id="service_drop_mob">
+                        <button class="btn btn_orange_header">SEO</button>
+                        <button class="btn btn_orange_header">PPC</button>
+                        <button class="btn btn_orange_header">ORM</button>
+                        <button class="btn btn_orange_header">UX/UI</button>
+                        <button class="btn btn_orange_header">Email</button>
+                        <button class="btn btn_orange_header">Social Media</button>
+                    </div>
+                </div>
+                <button class="btn btn_header_link">
+                    FAQs
+                </button>
+                <button class="btn btn_header_link">
+                    Contact Us
+                </button>
+                <button class="btn btn_header_link">
+                    Login 
+                </button>
+                <button class="btn btn_header_link">
+                    Sign up 
+                </button>
+                <div class="currency_drop_container">
+                    <button class="btn btn_header_drop" onclick="justDrop('currency_drop_mobo', 'roter4', this)">
+                        GBP £
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"  id="roter4">
+                            <path d="M18 9L12 15L6 9" stroke="#3C3C3C" stroke-width="2"/>
+                        </svg>
+                    </button>
+                    <div class="dropped_div d-none" id="currency_drop_mobo">
+                        <button class="btn btn_orange_header active">GBP £</button>
+                        <button class="btn btn_orange_header">GBP £</button>
+                        <button class="btn btn_orange_header">GBP £</button>
+                        <button class="btn btn_orange_header">GBP £</button>
+                    </div>
+                </div>
+                <button class="btn btn_global cart_menu">
+                    <img src="./assets/img/btn_primary_pattern.png" alt="" class="img-fluid btn_global_pattern">
+                    <div class="btn_global_inner w-100">
+                        <img src="./assets/img/cart_logo.svg" alt="" class="img-fluid cart_logo">
+                        <p class="cart_text">View Cart</p>
+                    </div>
+                </button>
+            </div>
+        </div>
+        <div class="header_cart_mobo_main_slide" style="display: none;">
+            <div class="header_cart_main_mobo">
+                <div class="cart_item">
+                    <div class="cart_item_left">
+                        <p class="cart_item_title">
+                            SEO - Platinum Package
+                        </p>
+                        <div class="cart_item_values_div">
+                            <p class="cart_item_values">x1</p>
+                            <p class="cart_item_values">1 Month</p>
+                            <p class="cart_item_values_bold">1 Month</p>
+                        </div>
+                    </div>
+                    <div class="cart_item_right">
+                        <button class="btn">
+                            <img src="./assets/img/bin.svg" alt="" class="img-fluid">
+                        </button>
+                    </div>
+                </div>
+                <div class="cart_item">
+                    <div class="cart_item_left">
+                        <p class="cart_item_title">
+                            SEO - Platinum Package
+                        </p>
+                        <div class="cart_item_values_div">
+                            <p class="cart_item_values">x1</p>
+                            <p class="cart_item_values">1 Month</p>
+                            <p class="cart_item_values_bold">1 Month</p>
+                        </div>
+                    </div>
+                    <div class="cart_item_right">
+                        <button class="btn">
+                            <img src="./assets/img/bin.svg" alt="" class="img-fluid">
+                        </button>
+                    </div>
+                </div>
+                <div class="cart_item">
+                    <div class="cart_item_left">
+                        <p class="cart_item_title">
+                            SEO - Platinum Package
+                        </p>
+                        <div class="cart_item_values_div">
+                            <p class="cart_item_values">x1</p>
+                            <p class="cart_item_values">1 Month</p>
+                            <p class="cart_item_values_bold">1 Month</p>
+                        </div>
+                    </div>
+                    <div class="cart_item_right">
+                        <button class="btn">
+                            <img src="./assets/img/bin.svg" alt="" class="img-fluid">
+                        </button>
+                    </div>
+                </div>
+
+                <div class="cart_footer">
+                    <div class="cart_footer_top">
+                        <p class="cart_item_values_bold">Subtotal</p>
+                        <p class="cart_item_values_bold">£11,468.00</p>
+                    </div>
+                    <div class="cart_footer_bottom">
+                        <button class="btn btn_orange_transparent" onclick="closeMobileCart()">Back to menu</button>
+                        <button class="btn btn_orange">Checkout</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section >
+
+        <section class="sec1_s">
+            <video class="bg-image d-lg-block d-md-block d-none" loop="" muted="" autoplay=""
+                style="object-fit: cover;">
+                <source src="./assets/img/ppc.mp4" type="video/mp4">
+            </video>
+            <video class="bg-image d-lg-none d-md-none d-block" loop="" muted="" autoplay="" style="object-fit: cover;">
+                <source src="./assets/img/ppc_mob.mp4" type="video/mp4">
+            </video>
+
+            <div class="sec1_video">
+                <h1 class="main_tt">
+                    Pay-per-click 
+                </h1>
+                <p class="main_pp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dictum nunc eget molestie
+                    duis nunc iaculis morbi vestibulum. Massa volutpat nisi, ultrices aenean pellentesque ornare.</p>
+                <button class="btn btn_global">
+                        <img src="./assets/img/btn_primary_pattern.png" alt="" class="img-fluid btn_global_pattern">
+                        <div class="btn_global_inner w-100">
+                            
+                            <p class="cart_text">Explore our pricing</p>
+                            <img src="./assets/img/down_arrow.svg" alt="" class="img-fluid cart_logo">
+                        </div>
+                </button>
+            </div>
+
+            <div class="mobile_none">
+                <div class="prop1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="39" height="39" viewBox="0 0 39 39" fill="none">
+                        <circle cx="19.5" cy="19.5" r="19.5" fill="white" fill-opacity="0.56" />
+                        <circle cx="19.5" cy="19.5" r="9.5" fill="white" />
+                    </svg>
+                    <p class="prop_pp ">Google Ads Account</p>
+                </div>
+            </div>
+
+            <div class="mobile_none">
+                <div class="prop2 ">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="39" height="39" viewBox="0 0 39 39" fill="none">
+                        <circle cx="19.5" cy="19.5" r="19.5" fill="white" fill-opacity="0.56" />
+                        <circle cx="19.5" cy="19.5" r="9.5" fill="white" />
+                    </svg>
+                    <p class="prop_pp ">Keyword Diagnostics</p>
+                </div>
+            </div>
+
+            <div class="mobile_none">
+                <div class="prop3">
+                    <p class="prop_pp ">Unlimited Adjustments</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="39" height="39" viewBox="0 0 39 39" fill="none">
+                        <circle cx="19.5" cy="19.5" r="19.5" fill="white" fill-opacity="0.56" />
+                        <circle cx="19.5" cy="19.5" r="9.5" fill="white" />
+                    </svg>
+
+                </div>
+            </div>
+
+
+        </section>
+
+        <section class="sec2_s">
+            <img src="./assets/img/intersect_tt.png" alt="" class="img-fluid intersect_tt mobile_none">
+            <img src="./assets/img/mobile_intersect.png" alt="" class="img-fluid intersect_tt_mob desktop_none">
+            <div class="container p-0">
+                <div class="inner_sec2">
+                    <div class="left_inner2">
+
+                        <div class="inin_div">
+                            <h1 class="div2_tt">
+                                What exactly is <br>pay-per-click?
+                            </h1>
+                            <p class="div2_pp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper nunc
+                                hendrerit eget sed iaculis felis, quis viverra. Quisque donec purus ac amet fusce duis
+                                tellus facilisis pharetra. Imperdiet pellentesque nisl in tellus. Consectetur magnis at
+                                aliquet sed elementum. Pellentesque volutpat a vitae risus nunc et pharetra leo.
+                                Tristique sem mi porttitor morbi vel enim proin. Nisl ac neque, id euismod.</p>
+
+                        </div>
+                    </div>
+                    <div class="right_inner2">
+                        <div class="inin_div">
+                            <h1 class="div2_tt">
+                                Reach interested customers fast
+                            </h1>
+                            <p class="div2_pp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper nunc
+                                hendrerit eget sed iaculis felis, quis viverra. Quisque donec purus ac amet fusce duis
+                                tellus facilisis pharetra. Imperdiet pellentesque nisl in tellus. Consectetur magnis at
+                                aliquet sed elementum. Pellentesque volutpat a vitae risus nunc et pharetra leo.
+                                Tristique sem mi porttitor morbi vel enim proin. Nisl ac neque, id euismod.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <img class="img-fluid inter mobile_none" src="./assets/img/Intersect_t.png"> -->
+
+        </section>
+
+        <section class="sec3_s">
+
+            <div class="sec3_1div">
+                <h1 class="sec3_tt">How We <span class="sec3_spantt">Make<br class="desktop_none"> It Happen</span></h1>
+                <p class="sec_pp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam leo velit mi diam sed
+                    viverra aenean. Ut et velit molestie consectetur pharetra, platea convallis. Eleifend porttitor
+                    viverra sed lectus ipsum vitae ipsum blandit.</p>
+            </div>
+
+            <div class="cards_div container custom_padding">
+
+                <div class="cards_crd">
+
+                    <img src="./assets/img/1.png" alt="" class="img-fluid crd_image mobile_none">
+                    <img src="./assets/img/mob_crd.png" alt="" class="img-fluid crd_image desktop_none">
+                    <div class="context_crd">
+                        <h1 class="crd_tt">
+                            Creation
+                        </h1>
+
+                        <p class="crd_pp">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit arcu aliquam vitae.
+                        </p>
+
+                    </div>
+
+                </div>
+                <div class="cards_crd">
+
+                    <img src="./assets/img/2.png" alt="" class="img-fluid crd_image mobile_none">
+                    <img src="./assets/img/mob_crd2.png" alt="" class="img-fluid crd_image desktop_none">
+                    <div class="context_crd">
+                        <h1 class="crd_tt">
+                            Communication
+                        </h1>
+
+                        <p class="crd_pp">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit arcu aliquam vitae.
+                        </p>
+
+                    </div>
+
+                </div>
+                <div class="cards_crd">
+
+                    <img src="./assets/img/3.png" alt="" class="img-fluid crd_image mobile_none">
+                    <img src="./assets/img/mob_crd3.png" alt="" class="img-fluid crd_image desktop_none">
+                    <div class="context_crd">
+                        <h1 class="crd_tt">
+                            Development
+                        </h1>
+
+                        <p class="crd_pp">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit arcu aliquam vitae.
+                        </p>
+
+                    </div>
+
+                </div>
+                <div class="cards_crd">
+
+                    <img src="./assets/img/4.png" alt="" class="img-fluid crd_image mobile_none">
+                    <img src="./assets/img/mob_crd4.png" alt="" class="img-fluid crd_image desktop_none">
+                    <div class="context_crd">
+                        <h1 class="crd_tt">
+                            Results
+                        </h1>
+
+                        <p class="crd_pp">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit arcu aliquam vitae.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="sec4_s">
+
+            <div class="container custom_padding2">
+                <div class="sec4_1">
+
+                    <h1 class="sec4_tt">Powering Brands<br> <span class="sec4_tt_span">That Mean Business</span></h1>
+                    <p class="sec4_pp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper nunc hendrerit eget sed iaculis felis, quis viverra. Quisque donec purus ac amet fusce duis tellus facilisis pharetra. Imperdiet pellentesque nisl in tellus. Consectetur magnis at aliquet sed. </p>
+    
+                </div>
+    
+                <div class="sec4_2">
+                    <div class="sec4_crd">
+                        <img src="./assets/img/ppc1.png" alt="" class="img-fluid crd_image2 mobile_none">
+                        <img src="./assets/img/ppc1_mob.png" alt="" class="img-fluid crd_image2 desktop_none">
+                        <div class="sec4_down">
+                            <h1 class="crd4_tt">Google Ad account</h1>
+                            <p class="crd4_pp">Lorem ipsum dolor sit amet <br class="desktop_none">  consectetur. Neque integer faucibus imperdiet turpis.</p>
+    
+                        </div>
+                    </div>
+
+                    <div class="sec4_crd">
+                        <img src="./assets/img/ppc2.png" alt="" class="img-fluid crd_image2 mobile_none">
+                        <img src="./assets/img/ppc2_mob.png" alt="" class="img-fluid crd_image2 desktop_none">
+                        <div class="sec4_down">
+                            <h1 class="crd4_tt">Unlimited Changes</h1>
+                            <p class="crd4_pp">Lorem ipsum dolor sit amet <br class="desktop_none">  consectetur. Neque integer faucibus imperdiet turpis.</p>
+    
+                        </div>
+                    </div>
+
+                    <div class="sec4_crd">
+                        <img src="./assets/img/ppc3.png" alt="" class="img-fluid crd_image2 mobile_none">
+                        <img src="./assets/img/ppc3_mob.png" alt="" class="img-fluid crd_image2 desktop_none">
+                        <div class="sec4_down">
+                            <h1 class="crd4_tt">Keyword Diagnostic</h1>
+                            <p class="crd4_pp">Lorem ipsum dolor sit amet <br class="desktop_none"> consectetur. Neque integer faucibus imperdiet turpis.</p>
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+        </section>
+
+        <section class="sec5_s">
+
+            <div class="container custom_padding5">
+
+                <div class="inner_sec5">
+                    <div class="left_sec5">
+                        <div class="inin_sec5">
+                            <h1 class="sec5_tt">Digital Marketing <br><span class="span_sec5_tt">That Hits Different!</span>
+                            </h1>
+                            <p class="sec5_pp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper nunc
+                                hendrerit eget sed iaculis felis, quis viverra. Quisque donec purus ac amet fusce duis tellus
+                                facilisis pharetra..
+                            </p>
+        
+                            <div class="pointer_p">
+                                <div class="pointer_line">
+                                    <img src="./assets/img/pointer.svg" alt="" class="img-fluid">
+                                    <p class="pointer_pp">Strategy experience and analytical expertise combine.</p>
+                                </div>
+                                <div class="pointer_line">
+                                    <img src="./assets/img/pointer.svg" alt="" class="img-fluid">
+                                    <p class="pointer_pp">Strategy experience and analytical expertise combine.</p>
+                                </div>
+                                <div class="pointer_line">
+                                    <img src="./assets/img/pointer.svg" alt="" class="img-fluid">
+                                    <p class="pointer_pp">Strategy experience and analytical expertise combine.</p>
+                                </div>
+        
+                            </div>
+                        </div>
+        
+                        <button class="btn btn_global2 on_phone">
+                            <img src="./assets/img/btn_primary_pattern2.png" alt="" class="img-fluid btn_global_pattern2">
+                            <div class="btn_global_inner2 on_phone">
+                                <p class="cart_text">Learn more about us</p>
+                                <img src="./assets/img/up_right.svg" alt="" class="img-fluid cart_logo">
+                            </div>
+                        </button>
+
+                    </div>
+                    <div class="right_sec5">
+                        <img src="./assets/img/ppc_photo.png" alt="" class="img-fluid mobile_none">
+                        <img src="./assets/img/ppc_mob_photo.png" alt="" class="img-fluid desktop_none">
+                    </div>
+                </div>
+
+            </div>
+            
+
+        </section>
+
+        <section class="sec8_s">
+
+            
+            <h1 class="table_tt">
+                Pricing That <br class="desktop_none">Makes Sense
+            </h1>
+            <p class="table_pp">No contracts. No Surprise fees.</p>
+            <div class="for_below_table ppc_width mx-auto">
+                <div class="social_tablebar w-100">
+                    <div class="tab_btnbar">
+                        <div class="nav-tabs-container position-relative">
+                            <ul class="nav nav-pills service_tabbar" id="pills-tab" role="tablist">
+                                <li class="nav-item col mb-0" role="presentation">
+                                    <button class="active service_tabbtn w-100" id="pills-one-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-one" type="button" role="tab" aria-controls="pills-one"
+                                        aria-selected="true">1&nbsp;Month</button>
+                                </li>
+                                <li class="nav-item col mb-0" role="presentation">
+                                    <button class="service_tabbtn w-100" id="pills-three-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-three" type="button" role="tab" aria-controls="pills-three"
+                                        aria-selected="false">3&nbsp;Months</button>
+                                </li>
+                                <li class="nav-item col mb-0" role="presentation">
+                                    <button class="service_tabbtn w-100" id="pills-six-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-six" type="button" role="tab" aria-controls="pills-six"
+                                        aria-selected="false">6&nbsp;Months</button>
+                                </li>
+                                <li class="nav-item col mb-0" role="presentation">
+                                    <button class="service_tabbtn w-100" id="pills-twelve-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-twelve" type="button" role="tab" aria-controls="pills-twelve"
+                                        aria-selected="false">12&nbsp;Months</button>
+                                </li>
+                            </ul>
+                            <div class="progress-line">
+                                <div class="progress-arrow"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="social_swipetext desktop_none">Swipe left and right to view table</p>
+                    <div class="tab_contentbar tab-content">
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active service_contentmain" id="pills-one" role="tabpanel"
+                                aria-labelledby="pills-one-tab">
+                                <div class="service_tabcontent table-responsive">
+                                    <table class="table table-borderless mb-0 service_table">
+                                        <thead class="service_table_header">
+                                            <tr class="align-middle">
+                                                <th scope="col" class="text-center">
+                                                </th>
+                                                <th scope="col" class="text-center">
+                                                    <div class="social_tablehead">
+                                                        <p class="social_tabletitle">Bronze</p>
+                                                        <p class="social_tableamt">£120</p>
+                                                        <p class="social_tablesubtitle">+VAT</p>
+                                                        <button type="button" class="btn social_tablebtn">Add To Cart</button>
+                                                    </div>
+                                                </th>
+                                                <th scope="col" class="text-center">
+                                                    <div class="social_tablehead">
+                                                        <p class="social_tabletitle">Silver</p>
+                                                        <p class="social_tableamt">£264</p>
+                                                        <p class="social_tablesubtitle">+VAT</p>
+                                                        <button type="button" class="btn social_tablebtn">Add To Cart</button>
+                                                    </div>
+                                                </th>
+                                                <th scope="col" class="text-center">
+                                                    <div class="social_tablehead">
+                                                        <p class="social_tabletitle">Gold</p>
+                                                        <p class="social_tableamt">£547</p>
+                                                        <p class="social_tablesubtitle">+VAT</p>
+                                                        <button type="button" class="btn social_tablebtn">Add To Cart</button>
+                                                    </div>
+                                                </th>
+                                                
+                                            </tr>
+                                        </thead>
+                                        
+                                        <tbody class="service_table_body">
+                                            <tr class="align-middle">
+                                                <td>
+                                                    <p class="service_bodytitle">Creation of Ad Groups</p>
+                                                </td>
+                                                <td class="text-center">
+                                                    <img class="img-fluid" src="./assets/img/service_wrong.svg">
+                                                </td>
+                                                <td class="text-center">
+                                                    <img class="img-fluid" src="./assets/img/service_tick.svg">
+                                                </td>
+                                                <td class="text-center">
+                                                    <img class="img-fluid" src="./assets/img/service_tick.svg">
+                                                </td>
+                                                
+                                            </tr>
+                                            <tr class="align-middle">
+                                                <td>
+                                                    <p class="service_bodytitle">competitor keyword tracker</p>
+                                                </td>
+                                                
+                                                <td class="text-center">
+                                                    <img class="img-fluid" src="./assets/img/service_wrong.svg">
+                                                </td>
+                                                <td class="text-center">
+                                                    <img class="img-fluid" src="./assets/img/service_wrong.svg">
+                                                </td>
+                                                <td class="text-center">
+                                                    <img class="img-fluid" src="./assets/img/service_wrong.svg">
+                                                </td>
+                                                
+                                                
+                                            </tr>
+                                            <tr class="align-middle">
+                                                <td>
+                                                    <p class="service_bodytitle">display advertising creation</p>
+                                                </td>
+                                                <td class="text-center">
+                                                    <img class="img-fluid" src="./assets/img/service_wrong.svg">
+                                                </td>
+                                                <td class="text-center">
+                                                    <img class="img-fluid" src="./assets/img/service_wrong.svg">
+                                                </td>
+                                                <td class="text-center">
+                                                    <img class="img-fluid" src="./assets/img/service_tick.svg">
+                                                </td>
+                                               
+                                            </tr>
+                                            <tr class="align-middle">
+                                                <td>
+                                                    <p class="service_bodytitle">Google Ads Account</p>
+                                                </td>
+                                                <td class="text-center">
+                                                    <img class="img-fluid" src="./assets/img/service_tick.svg">
+                                                </td>
+                                                <td class="text-center">
+                                                    <img class="img-fluid" src="./assets/img/service_tick.svg">
+                                                </td>
+                                                <td class="text-center">
+                                                    <img class="img-fluid" src="./assets/img/service_tick.svg">
+                                                </td>
+                                                
+                                            </tr>
+                                            <tr class="align-middle">
+                                                <td>
+                                                    <p class="service_bodytitle">monthly analysis (Bids)</p>
+                                                </td>
+                                                <td class="text-center">
+                                                    <img class="img-fluid" src="./assets/img/service_wrong.svg">
+                                                </td>
+                                                <td class="text-center">
+                                                    <img class="img-fluid" src="./assets/img/service_tick.svg">
+                                                </td>
+                                                <td class="text-center">
+                                                    <img class="img-fluid" src="./assets/img/service_tick.svg">
+                                                </td>
+                                                
+                                            </tr>
+                                            <tr class="align-middle">
+                                                <td>
+                                                    <p class="service_bodytitle">No Contract, Cancel Anytime</p>
+                                                </td>
+                                                <td class="text-center">
+                                                    <img class="img-fluid" src="./assets/img/service_tick.svg">
+                                                </td>
+                                                <td class="text-center">
+                                                    <img class="img-fluid" src="./assets/img/service_tick.svg">
+                                                </td>
+                                                <td class="text-center">
+                                                    <img class="img-fluid" src="./assets/img/service_tick.svg">
+                                                </td>
+                                            </tr>
+                                            <tr class="align-middle">
+                                                <td>
+                                                    <p class="service_bodytitle">reporting</p>
+                                                </td>
+                                                <td class="text-center">
+                                                    <p class="service_bodytext">Monthly</p>
+                                                </td>
+                                                <td class="text-center">
+                                                    <p class="service_bodytext">Monthly</p>
+                                                </td>
+                                                <td class="text-center">
+                                                    <p class="service_bodytext">Monthly</p>
+                                                </td>
+                                                
+                                            </tr>
+                                            <tr class="align-middle">
+                                                <td>
+                                                    <p class="service_bodytitle">Unlimited adjustments</p>
+                                                </td>
+                                                <td class="text-center">
+                                                    <img class="img-fluid" src="./assets/img/service_tick.svg">
+                                                </td>
+                                                <td class="text-center">
+                                                    <img class="img-fluid" src="./assets/img/service_tick.svg">
+                                                </td>
+                                                <td class="text-center">
+                                                    <img class="img-fluid" src="./assets/img/service_tick.svg">
+                                                </td>
+                                            </tr>
+
+                                            
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade service_contentmain" id="pills-three" role="tabpanel"
+                                aria-labelledby="pills-three-tab">
+                                <div class="service_tabcontent table-responsive">
+                                    <table class="table table-borderless mb-0 service_table">
+                                        <thead class="service_table_header">
+                                            <tr class="align-middle">
+                                                <th scope="col" class="text-center">
+                                                </th>
+                                                <th scope="col" class="text-center">
+                                                    <div class="social_tablehead">
+                                                        <p class="social_tabletitle">Bronze</p>
+                                                        <p class="social_tableamt">£120</p>
+                                                        <p class="social_tablesubtitle">+VAT</p>
+                                                        <button type="button" class="btn social_tablebtn">Add To Cart</button>
+                                                    </div>
+                                                </th>
+                                                <th scope="col" class="text-center">
+                                                    <div class="social_tablehead">
+                                                        <p class="social_tabletitle">Silver</p>
+                                                        <p class="social_tableamt">£264</p>
+                                                        <p class="social_tablesubtitle">+VAT</p>
+                                                        <button type="button" class="btn social_tablebtn">Add To Cart</button>
+                                                    </div>
+                                                </th>
+                                                <th scope="col" class="text-center">
+                                                    <div class="social_tablehead">
+                                                        <p class="social_tabletitle">Gold</p>
+                                                        <p class="social_tableamt">£547</p>
+                                                        <p class="social_tablesubtitle">+VAT</p>
+                                                        <button type="button" class="btn social_tablebtn">Add To Cart</button>
+                                                    </div>
+                                                </th>
+                                                
+                                            </tr>
+                                        </thead>
+                                        
+                                        <tbody class="service_table_body">
+                                            <tr class="align-middle">
+                                                <td>
+                                                    <p class="service_bodytitle">Creation of Ad Groups</p>
+                                                </td>
+                                                <td class="text-center">
+                                                    <img class="img-fluid" src="./assets/img/service_wrong.svg">
+                                                </td>
+                                                <td class="text-center">
+                                                    <img class="img-fluid" src="./assets/img/service_tick.svg">
+                                                </td>
+                                                <td class="text-center">
+                                                    <img class="img-fluid" src="./assets/img/service_tick.svg">
+                                                </td>
+                                                
+                                            </tr>
+                                            <tr class="align-middle">
+                                                <td>
+                                                    <p class="service_bodytitle">competitor keyword tracker</p>
+                                                </td>
+                                                
+                                                <td class="text-center">
+                                                    <img class="img-fluid" src="./assets/img/service_wrong.svg">
+                                                </td>
+                                                <td class="text-center">
+                                                    <img class="img-fluid" src="./assets/img/service_wrong.svg">
+                                                </td>
+                                                <td class="text-center">
+                                                    <img class="img-fluid" src="./assets/img/service_wrong.svg">
+                                                </td>
+                                                
+                                                
+                                            </tr>
+                                            <tr class="align-middle">
+                                                <td>
+                                                    <p class="service_bodytitle">display advertising creation</p>
+                                                </td>
+                                                <td class="text-center">
+                                                    <img class="img-fluid" src="./assets/img/service_wrong.svg">
+                                                </td>
+                                                <td class="text-center">
+                                                    <img class="img-fluid" src="./assets/img/service_wrong.svg">
+                                                </td>
+                                                <td class="text-center">
+                                                    <img class="img-fluid" src="./assets/img/service_tick.svg">
+                                                </td>
+                                               
+                                            </tr>
+                                            <tr class="align-middle">
+                                                <td>
+                                                    <p class="service_bodytitle">Google Ads Account</p>
+                                                </td>
+                                                <td class="text-center">
+                                                    <img class="img-fluid" src="./assets/img/service_tick.svg">
+                                                </td>
+                                                <td class="text-center">
+                                                    <img class="img-fluid" src="./assets/img/service_tick.svg">
+                                                </td>
+                                                <td class="text-center">
+                                                    <img class="img-fluid" src="./assets/img/service_tick.svg">
+                                                </td>
+                                                
+                                            </tr>
+                                            <tr class="align-middle">
+                                                <td>
+                                                    <p class="service_bodytitle">monthly analysis (Bids)</p>
+                                                </td>
+                                                <td class="text-center">
+                                                    <img class="img-fluid" src="./assets/img/service_wrong.svg">
+                                                </td>
+                                                <td class="text-center">
+                                                    <img class="img-fluid" src="./assets/img/service_tick.svg">
+                                                </td>
+                                                <td class="text-center">
+                                                    <img class="img-fluid" src="./assets/img/service_tick.svg">
+                                                </td>
+                                                
+                                            </tr>
+                                            <tr class="align-middle">
+                                                <td>
+                                                    <p class="service_bodytitle">No Contract, Cancel Anytime</p>
+                                                </td>
+                                                <td class="text-center">
+                                                    <img class="img-fluid" src="./assets/img/service_tick.svg">
+                                                </td>
+                                                <td class="text-center">
+                                                    <img class="img-fluid" src="./assets/img/service_tick.svg">
+                                                </td>
+                                                <td class="text-center">
+                                                    <img class="img-fluid" src="./assets/img/service_tick.svg">
+                                                </td>
+                                            </tr>
+                                            <tr class="align-middle">
+                                                <td>
+                                                    <p class="service_bodytitle">reporting</p>
+                                                </td>
+                                                <td class="text-center">
+                                                    <p class="service_bodytext">Monthly</p>
+                                                </td>
+                                                <td class="text-center">
+                                                    <p class="service_bodytext">Monthly</p>
+                                                </td>
+                                                <td class="text-center">
+                                                    <p class="service_bodytext">Monthly</p>
+                                                </td>
+                                                
+                                            </tr>
+                                            <tr class="align-middle">
+                                                <td>
+                                                    <p class="service_bodytitle">Unlimited adjustments</p>
+                                                </td>
+                                                <td class="text-center">
+                                                    <img class="img-fluid" src="./assets/img/service_tick.svg">
+                                                </td>
+                                                <td class="text-center">
+                                                    <img class="img-fluid" src="./assets/img/service_tick.svg">
+                                                </td>
+                                                <td class="text-center">
+                                                    <img class="img-fluid" src="./assets/img/service_tick.svg">
+                                                </td>
+                                            </tr>
+
+                                            
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade service_contentmain" id="pills-six" role="tabpanel"
+                                aria-labelledby="pills-six-tab">
+                                <div class="service_tabcontent table-responsive">
+                                    <table class="table table-borderless mb-0 service_table">
+                                        <thead class="service_table_header">
+                                            <tr class="align-middle">
+                                                <th scope="col" class="text-center">
+                                                </th>
+                                                <th scope="col" class="text-center">
+                                                    <div class="social_tablehead">
+                                                        <p class="social_tabletitle">Bronze</p>
+                                                        <p class="social_tableamt">£120</p>
+                                                        <p class="social_tablesubtitle">+VAT</p>
+                                                        <button type="button" class="btn social_tablebtn">Add To Cart</button>
+                                                    </div>
+                                                </th>
+                                                <th scope="col" class="text-center">
+                                                    <div class="social_tablehead">
+                                                        <p class="social_tabletitle">Silver</p>
+                                                        <p class="social_tableamt">£264</p>
+                                                        <p class="social_tablesubtitle">+VAT</p>
+                                                        <button type="button" class="btn social_tablebtn">Add To Cart</button>
+                                                    </div>
+                                                </th>
+                                                <th scope="col" class="text-center">
+                                                    <div class="social_tablehead">
+                                                        <p class="social_tabletitle">Gold</p>
+                                                        <p class="social_tableamt">£547</p>
+                                                        <p class="social_tablesubtitle">+VAT</p>
+                                                        <button type="button" class="btn social_tablebtn">Add To Cart</button>
+                                                    </div>
+                                                </th>
+                                                
+                                            </tr>
+                                        </thead>
+                                        
+                                        <tbody class="service_table_body">
+                                            <tr class="align-middle">
+                                                <td>
+                                                    <p class="service_bodytitle">Creation of Ad Groups</p>
+                                                </td>
+                                                <td class="text-center">
+                                                    <img class="img-fluid" src="./assets/img/service_wrong.svg">
+                                                </td>
+                                                <td class="text-center">
+                                                    <img class="img-fluid" src="./assets/img/service_tick.svg">
+                                                </td>
+                                                <td class="text-center">
+                                                    <img class="img-fluid" src="./assets/img/service_tick.svg">
+                                                </td>
+                                                
+                                            </tr>
+                                            <tr class="align-middle">
+                                                <td>
+                                                    <p class="service_bodytitle">competitor keyword tracker</p>
+                                                </td>
+                                                
+                                                <td class="text-center">
+                                                    <img class="img-fluid" src="./assets/img/service_wrong.svg">
+                                                </td>
+                                                <td class="text-center">
+                                                    <img class="img-fluid" src="./assets/img/service_wrong.svg">
+                                                </td>
+                                                <td class="text-center">
+                                                    <img class="img-fluid" src="./assets/img/service_wrong.svg">
+                                                </td>
+                                                
+                                                
+                                            </tr>
+                                            <tr class="align-middle">
+                                                <td>
+                                                    <p class="service_bodytitle">display advertising creation</p>
+                                                </td>
+                                                <td class="text-center">
+                                                    <img class="img-fluid" src="./assets/img/service_wrong.svg">
+                                                </td>
+                                                <td class="text-center">
+                                                    <img class="img-fluid" src="./assets/img/service_wrong.svg">
+                                                </td>
+                                                <td class="text-center">
+                                                    <img class="img-fluid" src="./assets/img/service_tick.svg">
+                                                </td>
+                                               
+                                            </tr>
+                                            <tr class="align-middle">
+                                                <td>
+                                                    <p class="service_bodytitle">Google Ads Account</p>
+                                                </td>
+                                                <td class="text-center">
+                                                    <img class="img-fluid" src="./assets/img/service_tick.svg">
+                                                </td>
+                                                <td class="text-center">
+                                                    <img class="img-fluid" src="./assets/img/service_tick.svg">
+                                                </td>
+                                                <td class="text-center">
+                                                    <img class="img-fluid" src="./assets/img/service_tick.svg">
+                                                </td>
+                                                
+                                            </tr>
+                                            <tr class="align-middle">
+                                                <td>
+                                                    <p class="service_bodytitle">monthly analysis (Bids)</p>
+                                                </td>
+                                                <td class="text-center">
+                                                    <img class="img-fluid" src="./assets/img/service_wrong.svg">
+                                                </td>
+                                                <td class="text-center">
+                                                    <img class="img-fluid" src="./assets/img/service_tick.svg">
+                                                </td>
+                                                <td class="text-center">
+                                                    <img class="img-fluid" src="./assets/img/service_tick.svg">
+                                                </td>
+                                                
+                                            </tr>
+                                            <tr class="align-middle">
+                                                <td>
+                                                    <p class="service_bodytitle">No Contract, Cancel Anytime</p>
+                                                </td>
+                                                <td class="text-center">
+                                                    <img class="img-fluid" src="./assets/img/service_tick.svg">
+                                                </td>
+                                                <td class="text-center">
+                                                    <img class="img-fluid" src="./assets/img/service_tick.svg">
+                                                </td>
+                                                <td class="text-center">
+                                                    <img class="img-fluid" src="./assets/img/service_tick.svg">
+                                                </td>
+                                            </tr>
+                                            <tr class="align-middle">
+                                                <td>
+                                                    <p class="service_bodytitle">reporting</p>
+                                                </td>
+                                                <td class="text-center">
+                                                    <p class="service_bodytext">Monthly</p>
+                                                </td>
+                                                <td class="text-center">
+                                                    <p class="service_bodytext">Monthly</p>
+                                                </td>
+                                                <td class="text-center">
+                                                    <p class="service_bodytext">Monthly</p>
+                                                </td>
+                                                
+                                            </tr>
+                                            <tr class="align-middle">
+                                                <td>
+                                                    <p class="service_bodytitle">Unlimited adjustments</p>
+                                                </td>
+                                                <td class="text-center">
+                                                    <img class="img-fluid" src="./assets/img/service_tick.svg">
+                                                </td>
+                                                <td class="text-center">
+                                                    <img class="img-fluid" src="./assets/img/service_tick.svg">
+                                                </td>
+                                                <td class="text-center">
+                                                    <img class="img-fluid" src="./assets/img/service_tick.svg">
+                                                </td>
+                                            </tr>
+
+                                            
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade service_contentmain" id="pills-twelve" role="tabpanel"
+                                aria-labelledby="pills-twelve-tab">
+                                <div class="service_tabcontent table-responsive">
+                                    <table class="table table-borderless mb-0 service_table">
+                                        <thead class="service_table_header">
+                                            <tr class="align-middle">
+                                                <th scope="col" class="text-center">
+                                                </th>
+                                                <th scope="col" class="text-center">
+                                                    <div class="social_tablehead">
+                                                        <p class="social_tabletitle">Bronze</p>
+                                                        <p class="social_tableamt">£120</p>
+                                                        <p class="social_tablesubtitle">+VAT</p>
+                                                        <button type="button" class="btn social_tablebtn">Add To Cart</button>
+                                                    </div>
+                                                </th>
+                                                <th scope="col" class="text-center">
+                                                    <div class="social_tablehead">
+                                                        <p class="social_tabletitle">Silver</p>
+                                                        <p class="social_tableamt">£264</p>
+                                                        <p class="social_tablesubtitle">+VAT</p>
+                                                        <button type="button" class="btn social_tablebtn">Add To Cart</button>
+                                                    </div>
+                                                </th>
+                                                <th scope="col" class="text-center">
+                                                    <div class="social_tablehead">
+                                                        <p class="social_tabletitle">Gold</p>
+                                                        <p class="social_tableamt">£547</p>
+                                                        <p class="social_tablesubtitle">+VAT</p>
+                                                        <button type="button" class="btn social_tablebtn">Add To Cart</button>
+                                                    </div>
+                                                </th>
+                                                
+                                            </tr>
+                                        </thead>
+                                        
+                                        <tbody class="service_table_body">
+                                            <tr class="align-middle">
+                                                <td>
+                                                    <p class="service_bodytitle">Creation of Ad Groups</p>
+                                                </td>
+                                                <td class="text-center">
+                                                    <img class="img-fluid" src="./assets/img/service_wrong.svg">
+                                                </td>
+                                                <td class="text-center">
+                                                    <img class="img-fluid" src="./assets/img/service_tick.svg">
+                                                </td>
+                                                <td class="text-center">
+                                                    <img class="img-fluid" src="./assets/img/service_tick.svg">
+                                                </td>
+                                                
+                                            </tr>
+                                            <tr class="align-middle">
+                                                <td>
+                                                    <p class="service_bodytitle">competitor keyword tracker</p>
+                                                </td>
+                                                
+                                                <td class="text-center">
+                                                    <img class="img-fluid" src="./assets/img/service_wrong.svg">
+                                                </td>
+                                                <td class="text-center">
+                                                    <img class="img-fluid" src="./assets/img/service_wrong.svg">
+                                                </td>
+                                                <td class="text-center">
+                                                    <img class="img-fluid" src="./assets/img/service_wrong.svg">
+                                                </td>
+                                                
+                                                
+                                            </tr>
+                                            <tr class="align-middle">
+                                                <td>
+                                                    <p class="service_bodytitle">display advertising creation</p>
+                                                </td>
+                                                <td class="text-center">
+                                                    <img class="img-fluid" src="./assets/img/service_wrong.svg">
+                                                </td>
+                                                <td class="text-center">
+                                                    <img class="img-fluid" src="./assets/img/service_wrong.svg">
+                                                </td>
+                                                <td class="text-center">
+                                                    <img class="img-fluid" src="./assets/img/service_tick.svg">
+                                                </td>
+                                               
+                                            </tr>
+                                            <tr class="align-middle">
+                                                <td>
+                                                    <p class="service_bodytitle">Google Ads Account</p>
+                                                </td>
+                                                <td class="text-center">
+                                                    <img class="img-fluid" src="./assets/img/service_tick.svg">
+                                                </td>
+                                                <td class="text-center">
+                                                    <img class="img-fluid" src="./assets/img/service_tick.svg">
+                                                </td>
+                                                <td class="text-center">
+                                                    <img class="img-fluid" src="./assets/img/service_tick.svg">
+                                                </td>
+                                                
+                                            </tr>
+                                            <tr class="align-middle">
+                                                <td>
+                                                    <p class="service_bodytitle">monthly analysis (Bids)</p>
+                                                </td>
+                                                <td class="text-center">
+                                                    <img class="img-fluid" src="./assets/img/service_wrong.svg">
+                                                </td>
+                                                <td class="text-center">
+                                                    <img class="img-fluid" src="./assets/img/service_tick.svg">
+                                                </td>
+                                                <td class="text-center">
+                                                    <img class="img-fluid" src="./assets/img/service_tick.svg">
+                                                </td>
+                                                
+                                            </tr>
+                                            <tr class="align-middle">
+                                                <td>
+                                                    <p class="service_bodytitle">No Contract, Cancel Anytime</p>
+                                                </td>
+                                                <td class="text-center">
+                                                    <img class="img-fluid" src="./assets/img/service_tick.svg">
+                                                </td>
+                                                <td class="text-center">
+                                                    <img class="img-fluid" src="./assets/img/service_tick.svg">
+                                                </td>
+                                                <td class="text-center">
+                                                    <img class="img-fluid" src="./assets/img/service_tick.svg">
+                                                </td>
+                                            </tr>
+                                            <tr class="align-middle">
+                                                <td>
+                                                    <p class="service_bodytitle">reporting</p>
+                                                </td>
+                                                <td class="text-center">
+                                                    <p class="service_bodytext">Monthly</p>
+                                                </td>
+                                                <td class="text-center">
+                                                    <p class="service_bodytext">Monthly</p>
+                                                </td>
+                                                <td class="text-center">
+                                                    <p class="service_bodytext">Monthly</p>
+                                                </td>
+                                                
+                                            </tr>
+                                            <tr class="align-middle">
+                                                <td>
+                                                    <p class="service_bodytitle">Unlimited adjustments</p>
+                                                </td>
+                                                <td class="text-center">
+                                                    <img class="img-fluid" src="./assets/img/service_tick.svg">
+                                                </td>
+                                                <td class="text-center">
+                                                    <img class="img-fluid" src="./assets/img/service_tick.svg">
+                                                </td>
+                                                <td class="text-center">
+                                                    <img class="img-fluid" src="./assets/img/service_tick.svg">
+                                                </td>
+                                            </tr>
+
+                                            
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="sec7_s">
+
+            <div class="insec7_s">
+
+                <div>
+                    <h1 class="form_tt">Need a something <span class="span_form_tt">bespoke?</span> </h1>
+                    <p class="form_pp">Pick and choose what features you would like in your very own custom package
+                        Simply upload a document of your brief and our team will get back to you.</p>
+                </div>
+
+                
+
+
+                <div class="form_section">
+                    <div class="hori_hor">
+                        <div class="one_section">
+                            <p class="label_l">Full Name</p>
+                            <input type="text" id="fname" name="fname" class="input_tag">
+
+                        </div>
+                        <div class="one_section">
+                            <p class="label_l">Email</p>
+                            <input type="text" id="Email" name="Email" class="input_tag">
+
+                        </div>
+
+                    </div>
+                    <div class="spacer2"></div>
+
+                    <div class="hori_hor">
+                        <div class="one_section">
+                            <p class="label_l">Phone</p>
+                            <input type="text" id="pno" name="pno" class="input_tag">
+
+                        </div>
+                        <div class="one_section">
+                            <p class="label_l">Upload Brief</p>
+                            <div class="upload_div" onclick="field_box_file()">
+                                <p class="upload_placeholder" id="upload_placeholder">Upload brief here</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25"
+                                    fill="none">
+                                    <path
+                                        d="M5.89286 15.9289C4.29518 15.9289 3 14.9291 3 13.4631C3 11.9972 4.29518 10.8088 5.89286 10.8088C6.0015 10.8088 6.10875 10.8143 6.21429 10.825V10.8088H6.25407C6.22781 10.6155 6.21429 10.4187 6.21429 10.2189C6.21429 7.61272 8.51682 5.5 11.3571 5.5C13.2805 5.5 14.9573 6.46881 15.8395 7.90361C16.0551 7.87452 16.2756 7.85945 16.5 7.85945C18.9853 7.85945 21 9.70808 21 11.9885C21 13.8657 19.6348 15.2967 17.7656 15.7684M11.858 19.5V12.7258M11.858 12.7258L8.90625 15.5196M11.858 12.7258L14.8125 15.5196"
+                                        stroke="#3C3C3C" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+
+                            <input type="file" class="form-control input_upload" style="display: contents;"
+                                id="document" name="document" required>
+                        </div>
+
+                    </div>
+                    <div class="spacer"></div>
+                    <div class="hori_hor">
+                        <div class="one_section">
+                            <p class="label_l">Additional Information</p>
+                            <textarea class="textarea_t">
+                                </textarea>
+
+                        </div>
+
+                        <div class="for_robot_checkbox">
+                            <div class="c-checkbox">
+                                <div class="c-div">
+                                    <label class="d-flex justify-content-center justify-content-lg-start">
+                                        <input type="checkbox" id="terms" name="terms">
+                                        <label for="terms"></label>
+                                    </label>
+                                </div>
+                                <div class="c-text">
+                                    <p class="login_strong">By ticking this box, you agree to the<br> <span
+                                            class="blue_text">Terms & Conditions</span> & <span class="blue_text">Privacy
+                                            Policy</span></p>
+                                </div>
+                            </div>
+    
+                            <div class="spacer2"></div>
+    
+                            <img class="notrobot_1" src="./assets/img/not_a_robot.png">
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <button class="btn btn_global form_btn_wid">
+                    <img src="./assets/img/btn_primary_pattern.png" alt="" class="img-fluid btn_global_pattern">
+                    <div class="btn_global_inner w-100">
+                        
+                        <p class="cart_text">Submit Request</p>
+                    </div>
+            </button>
+
+           
+
+            </div>
+
+        </section>
+
+
+        
+
+
+    </section>
+
+    <footer class="footer">
+        <img src="./assets/img/mobo_footer_top_right.png" alt="" class="img-fluid desktop_none footer_top_right_img">
+        <img src="./assets/img/mobo_footer_bottom_left.png" alt="" class="img-fluid desktop_none footer_bottom_left_img">
+        <div class="container">
+            <div class="footer_main_bg">
+                <div class="footer_top">
+                    <div class="footer_top_left">
+                        <img src="./assets/img/footer_logo.svg" alt="" class="img-fluid footer_logo">
+                        <img src="./assets/img/mastercard.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="footer_top_right">
+                        <div class="footer_right_element">
+                            <p class="footer_element_title">Support Links</p>
+                            <div class="footer_link_div">
+                                <button class="btn footer_links">FAQs</button>
+                                <button class="btn footer_links">Terms & Conditions</button>
+                                <button class="btn footer_links">Privacy Policy</button>
+                            </div>
+                        </div>
+                        <div class="footer_right_element">
+                            <p class="footer_element_title">Our Services</p>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="footer_link_div">
+                                        <button class="btn footer_links">SEO</button>
+                                        <button class="btn footer_links">ORM</button>
+                                        <button class="btn footer_links">Email&nbsp;Marketing</button>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="footer_link_div">
+                                        <button class="btn footer_links">Pay-Per-Click</button>
+                                        <button class="btn footer_links">UX/UI</button>
+                                        <button class="btn footer_links">Social Media</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer_right_element">
+                            <p class="footer_element_title">Got Questions?</p>
+                            <div class="footer_link_div">
+                                <address class="footer_address">
+                                    info@Brandsparkz.co <br>
+                                    123 Main Street, <br>
+                                    New York, <br>
+                                    10030
+                                </address>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_bottom">
+                    <p class="footer_copyright">Copyright © 2025 Brand Sparkz.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+    
+    <!-- JQuery CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <!-- Bootstrap JS Links -->
+    <script src="./assets/dist/bootstrap/js/bootstrap.popper.min.js"></script>
+    <script src="./assets/dist/bootstrap/js/bootstrap.min.js"></script>
+    
+    <!-- Owl Carousel JS Links -->
+    <script src="./assets/dist/owl-carousel/js/owl.carousel.js"></script>
+    
+    <!-- JS Link -->
+    <script src="./assets/js/main.js"></script>
+    <script>
+        function field_box_file() {
+            console.log('me');
+            document.getElementById('document').click();
+        }
+        $("#document").on("change", function (e) {
+            document.getElementById('upload_placeholder').innerHTML = e.target.files[0].name;
+        })
+    </script>
+    <script>
+        document.querySelectorAll('.service_tabbtn').forEach((button, index) => {
+        button.addEventListener('click', function () {
+            document.querySelector('.progress-arrow').style.transform = `translateX(${index * 90}px)`;
+        });
+    });
+    
+    </script>
+    
+    <script>
+            $(document).ready(function () {
+                const a = document.querySelectorAll(".service_table tbody tr td:nth-child(2)");
+                const c = document.querySelectorAll(".service_table tbody tr td:last-child");
+                const d = document.querySelectorAll(".service_table tbody tr:first-child td");
+                const e = document.querySelectorAll(".service_table tbody tr:last-child td");
+                const f = document.querySelectorAll(".service_table tbody tr td:last-child");
+                a.forEach(x => {
+                    const b = document.createElement("div");
+                    b.className = "white_box";
+                    x.appendChild(b);
+                })
+                c.forEach(x => {
+                    const b = document.createElement("div");
+                    b.className = "white_box2";
+                    x.appendChild(b);
+                })
+                d.forEach(x => {
+                    const b = document.createElement("div");
+                    b.className = "image_box";
+                    x.appendChild(b);
+                })
+                e.forEach(x => {
+                    const b = document.createElement("div");
+                    b.className = "image_box2";
+                    x.appendChild(b);
+                })
+                f.forEach(x => {
+                    const b = document.createElement("div");
+                    b.className = "image_box3";
+                    const height = x.offsetHeight;
+                    b.style.height = height + "px";
+    
+                    
+                    x.appendChild(b);
+                })
+    
+            }
+            )
+    
+           
+    </script>
+</body>
+    
+</html>
